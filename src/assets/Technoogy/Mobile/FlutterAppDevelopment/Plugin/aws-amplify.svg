@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 256 191" width="28" height="21">
+  <title>aws-amplify-svg</title>
+  <defs>
+    <linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-256,106.295,-104.432,-251.513,256,42.345)">
+      <stop offset="0" stop-color="#ff9900"></stop>
+      <stop offset="1" stop-color="#ffc300"></stop>
+    </linearGradient>
+  </defs>
+  <style>
+		.s0 { fill: url(#g1) } 
+	</style>
+  <g id="Layer">
+    <path id="Layer" class="s0" d="m55.7 158.5h72.1l18.5 32.5h-0.5-145.8l51.4-89 21.5-37.3 18.5 32zm26.9-110.6l17.7-30.7 100.4 173.8h-35.5zm27.6-47.8h35.5l110.3 191h-35.6z"></path>
+  </g>
+</svg>

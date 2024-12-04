@@ -1,0 +1,188 @@
+.form {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form {
+  background-color: #404040;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  background: linear-gradient(180deg, transparent 80%, #f1f1f1);
+  border-radius: 50%;
+  border-radius: 50%;
+  filter: blur(10px) brightness(1.2);
+}
+
+.circle.one {
+  width: 130px;
+  height: 130px;
+  top: 130px;
+  right: -20px;
+}
+
+.circle.two {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  right: 30px;
+}
+
+.contact-form::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #404040;
+  top: 50px;
+  left: -12px;
+  transform: rotate(45deg);
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+
+.contact-info {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+
+.contact-info .title {
+  color: #404040;
+}
+
+.information {
+  display: flex;
+  color: #555;
+  margin: 0.7rem 0;
+  font-size: 0.95rem;
+  align-items: center;
+}
+
+.icon {
+  font-size: 30px;
+  color: #404040;
+  margin-right: 0.7rem;
+}
+
+.social-media {
+  padding: 2rem 0 0 0;
+}
+
+.social-media p {
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background: #404040;
+  text-align: center;
+  color: #fff;
+  line-height: 40px;
+  margin-right: 0.5rem;
+  transition: 0.4s;
+}
+.social-icons a svg {
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.09);
+}
+
+.contact-info::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border: 22px solid #404040;
+  border-radius: 50%;
+  bottom: -77px;
+  right: 50px;
+  opacity: 0.3;
+}
+
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info::before {
+    bottom: initial;
+    top: -72px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+
+  .contact-form::before {
+    top: -12px;
+    left: initial;
+    right: 70px;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .social-media {
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .contact-info::before {
+    display: none;
+  }
+
+
+  form,
+  .contact-info {
+    padding: 1.7rem 1.6rem;
+  }
+
+  .text,
+  .information,
+  .social-media p {
+    font-size: 0.8rem;
+  }
+
+  
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
+
+  .input {
+    padding: 0.45rem 1.2rem;
+  }
+
+  .btn {
+    padding: 0.45rem 1.2rem;
+  }
+}
