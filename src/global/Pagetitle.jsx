@@ -12,7 +12,7 @@ import { Link as RouterLink } from "react-router-dom";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import HomeIcon from "@mui/icons-material/Home";
 
-function Pagetitle({ title, description }) {
+function Pagetitle({ title, description ,Link}) {
   const theme = useTheme();
 
   return (
@@ -100,7 +100,6 @@ function Pagetitle({ title, description }) {
                 </Box>
                 <MUILink
                   component={RouterLink}
-                  to="/"
                   sx={{
                     color: theme.palette.secondary.main,
                     textDecoration:'none',

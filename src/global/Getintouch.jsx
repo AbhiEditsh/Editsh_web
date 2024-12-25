@@ -16,9 +16,8 @@ import { useTheme } from "@emotion/react";
 import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import WhatsAppIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "react-toastify/dist/ReactToastify.css";
 import "../../src/assets/Css/contact.css";
@@ -53,8 +52,8 @@ const Getintouch = () => {
     },
     {
       icon: <EmailIcon />,
-      text: "editshtech@gmail.com",
-      link: "mailto:editshtech@gmail.com",
+      text: "contact@editsh.com",
+      link: "mailto:contact@editsh.com",
     },
     {
       icon: <PhoneIcon />,
@@ -64,12 +63,14 @@ const Getintouch = () => {
   ];
 
   const socialMediaLinks = [
-    { icon: <FacebookIcon />, link: "#" },
     {
       icon: <InstagramIcon />,
       link: "https://www.instagram.com/editsh_technology/",
     },
-    { icon: <TwitterIcon />, link: "#" },
+    {
+      icon: <WhatsAppIcon />,
+      link: "https://wa.me/+919601175985?text=Welcome Editsh",
+    },
     {
       icon: <LinkedInIcon />,
       link: "https://www.linkedin.com/company/editsh/about/",
@@ -83,9 +84,13 @@ const Getintouch = () => {
       formData.append("image", file);
 
       axios
-        .post("https://editsh-back.onrender.com/api/upload-image", formData, {
-          headers: { "Content-Type": "multipart/form-data" },
-        })
+        .post(
+          "https://editsh-back-anft.onrender.com/api/upload-image",
+          formData,
+          {
+            headers: { "Content-Type": "multipart/form-data" },
+          }
+        )
         .then((response) => {
           setImage({
             url: response.data.url,
@@ -99,14 +104,14 @@ const Getintouch = () => {
         });
     }
   };
-  
+
   const handleSubmit = async (values, { resetForm, setSubmitting }) => {
     try {
       const response = await axios.post(
-        "https://editsh-back.onrender.com/api/gettouch/add",
-        values  
+        "https://editsh-back-anft.onrender.com/api/gettouch/add",
+        values
       );
-      
+
       toast.success(response.data.message);
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -243,7 +248,7 @@ const Getintouch = () => {
                       InputLabelProps={{
                         style: {
                           color: theme.palette.white,
-                        },  
+                        },
                       }}
                       InputProps={{
                         sx: {

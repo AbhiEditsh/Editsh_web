@@ -79,6 +79,7 @@ export default function Faq() {
         title={`FAQ`}
         description={`
         We are Surat-based IT Solution Providers committed to providing the best services for the growth of our valuable clients and their varied businesses.`}
+        Link={"faq"}
       />
       <Box
         sx={{

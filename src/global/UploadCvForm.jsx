@@ -29,7 +29,7 @@ function UploadCvForm() {
   const fetchTechnology = async () => {
     try {
       const response = await axios.get(
-        "https://editsh-back.onrender.com/api/technology/view"
+        "https://editsh-back-anft.onrender.com/api/technology/view"
       );
 
       setTechnology(response?.data?.data);
@@ -52,9 +52,13 @@ function UploadCvForm() {
       formData.append("image", file);
 
       axios
-        .post("https://editsh-back.onrender.com/api/upload-image", formData, {
-          headers: { "Content-Type": "multipart/form-data" },
-        })
+        .post(
+          "https://editsh-back-anft.onrender.com/api/upload-image",
+          formData,
+          {
+            headers: { "Content-Type": "multipart/form-data" },
+          }
+        )
         .then((response) => {
           setImage({
             url: response.data.url,
@@ -75,7 +79,7 @@ function UploadCvForm() {
     };
     try {
       const response = await axios.post(
-        "https://editsh-back.onrender.com/api/resume/add",
+        "https://editsh-back-anft.onrender.com/api/resume/add",
         formData
       );
       if (response.status === 201) {
@@ -115,7 +119,13 @@ function UploadCvForm() {
         draggable
         pauseOnHover
       />
-      <Box sx={{ p: 2, borderRadius: "10px" }}>
+      <Box
+        sx={{
+          my: 2,
+          py: { xs: 1, md: 2, lg: 4 },
+          backgroundColor: theme.palette.grey.main,
+        }}
+      >
         <Formik
           initialValues={{
             firstName: "",
@@ -269,6 +279,11 @@ function UploadCvForm() {
                       error={touched.month && Boolean(errors.month)}
                       helperText={touched.month && errors.month}
                       fullWidth
+                      InputLabelProps={{
+                        style: {
+                          color: theme.palette.black,
+                        },
+                      }}
                     >
                       {months.map((month) => (
                         <MenuItem key={month} value={month}>

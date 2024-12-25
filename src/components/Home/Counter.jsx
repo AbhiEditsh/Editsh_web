@@ -12,7 +12,7 @@ const Counter = () => {
 
   useEffect(() => {
     axios
-      .get("https://editsh-back.onrender.com/api/experince/view")
+      .get("https://editsh-back-anft.onrender.com/api/experince/view")
       .then((response) => setExperiences(response.data.data))
       .catch((err) => console.error(err));
   }, []);

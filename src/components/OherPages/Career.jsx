@@ -82,7 +82,7 @@ function Career() {
   const fetchTechnology = async () => {
     try {
       const response = await axios.get(
-        "https://editsh-back.onrender.com/api/technology/view"
+        "https://editsh-back-anft.onrender.com/api/technology/view"
       );
       setTechnology(response?.data?.data);
     } catch (err) {

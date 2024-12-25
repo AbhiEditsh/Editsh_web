@@ -16,7 +16,10 @@ const theme = createTheme({
     white: "#fff",
     lightwhite: "#404040",
     offwhite: "#ddd",
-    lightBlack:"#1a1a1a"
+    lightBlack: "#1a1a1a",
+    warning: {
+      main: "#f7dc6f",
+    },
   },
 });
 

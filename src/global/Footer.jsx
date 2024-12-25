@@ -11,7 +11,7 @@ import footerlogo from "../assets//footer/footer-logo.png";
 import SquareIcon from "@mui/icons-material/Square";
 import { Link } from "react-router-dom";
 import ScrollTotopbtn from "./ScrollTotopbtn";
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+
 const Footer = () => {
   const socialLinks = [
     {
@@ -25,10 +25,6 @@ const Footer = () => {
     {
       href: "https://wa.me/9601175985",
       Icon: WhatsAppIcon,
-    },
-    {
-      href: "https://www.facebook.com/profile.php?id=61559358057599",
-      Icon: FacebookOutlinedIcon,
     },
   ];
   const data = [
@@ -57,9 +53,9 @@ const Footer = () => {
         },
         {
           text: "Contact Us",
-          to: "/contact-us",
+          to: "/contact",
           icon: <SquareIcon sx={{ fontSize: "8px" }} />,
-        }
+        },
       ],
     },
     {
@@ -165,7 +161,7 @@ const Footer = () => {
                         marginLeft: "18px",
                       }}
                     >
-                      editshtech@gmail.com
+                      contact@editsh.com
                     </Link>
                   </Box>
                   <Box
@@ -475,17 +471,32 @@ const Footer = () => {
                     >
                       <EmailOutlinedIcon sx={{ fontSize: "28px" }} />
                     </Box>
-                    <Link
-                      to="mailto:inquiry@editsh.com"
-                      style={{
-                        color: theme.palette.black,
-                        fontFamily: theme.typography,
-                        fontSize: "16px",
-                        marginLeft: "18px",
-                      }}
-                    >
-                      inquiry@editsh.com
-                    </Link>
+                    <Box>
+                      <Link
+                        to="mailto:info@editsh.com"
+                        style={{
+                          color: theme.palette.black,
+                          fontFamily: theme.typography,
+                          fontSize: "16px",
+                          marginLeft: "18px",
+                          display: "block",
+                        }}
+                      >
+                        info@editsh.com
+                      </Link>
+                      <Link
+                        to="mailto:sales@editsh.com"
+                        style={{
+                          color: theme.palette.black,
+                          fontFamily: theme.typography,
+                          fontSize: "16px",
+                          marginLeft: "18px",
+                          display: "block",
+                        }}
+                      >
+                        sales@editsh.com
+                      </Link>
+                    </Box>
                   </Box>
                 </Box>
               </Box>

@@ -6,6 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Titleanimation } from "../../global/Titleanimation";
 import { useTheme } from "@mui/material/styles";
+import StarIcon from "@mui/icons-material/Star";
+import StarHalfIcon from "@mui/icons-material/StarHalf";
+import StarOutlineIcon from "@mui/icons-material/StarOutline";
 import axios from "axios";
 
 const ClientsTestimonil = () => {
@@ -14,7 +17,7 @@ const ClientsTestimonil = () => {
   const fetchExperiences = async () => {
     try {
       const response = await axios.get(
-        "https://editsh-back.onrender.com/api/testimonial/view"
+        "https://editsh-back-anft.onrender.com/api/testimonial/view"
       );
       console.log(response);
       settestimonial(response?.data?.data);
@@ -26,6 +29,45 @@ const ClientsTestimonil = () => {
   useEffect(() => {
     fetchExperiences();
   }, []);
+
+  const renderStars = (rating) => {
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 >= 0.5;
+    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+
+    return (
+      <>
+        {/* Render full stars */}
+        {Array.from({ length: fullStars }).map((_, i) => (
+          <StarIcon
+            key={`full-${i}`}
+            sx={{
+              fontSize: "16px",
+              color: theme.palette.warning.main,
+            }}
+          />
+        ))}
+        {hasHalfStar && (
+          <StarHalfIcon
+            key="half-star"
+            sx={{
+              fontSize: "16px",
+            }}
+          />
+        )}
+        {Array.from({ length: emptyStars }).map((_, i) => (
+          <StarOutlineIcon
+            key={`empty-${i}`}
+            sx={{
+              fontSize: "16px",
+              color: theme.palette.warning.main,
+
+            }}
+          />
+        ))}
+      </>
+    );
+  };
 
   const PrevArrow = (props) => {
     const { className, style, onClick } = props;
@@ -85,7 +127,7 @@ const ClientsTestimonil = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    cssEase: "linear", 
+    cssEase: "linear",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -130,7 +172,7 @@ const ClientsTestimonil = () => {
                     boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
                     borderRadius: "20px",
                     background:
-                      "linear-gradient(112deg, #fff 50%, #f1f1f1 50%)",
+                      "linear-gradient(112deg, #fff 50%,rgb(198, 198, 198) 50%)",
                   }}
                 >
                   <Box
@@ -173,6 +215,15 @@ const ClientsTestimonil = () => {
                     >
                       {testimonial.Review}
                     </Typography>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        gap: 0.5,
+                      }}
+                    >
+                      {renderStars(testimonial.rating)}
+                    </Box>
                   </Box>
                 </Card>
               </div>

@@ -35,7 +35,7 @@ const ContactForm = () => {
     onSubmit: async (values, { setSubmitting, resetForm }) => {
       try {
         const response = await axios.post(
-          "https://editsh-back.onrender.com/api/contact/add",
+          "https://editsh-back-anft.onrender.com/api/contact/add",
           values
         );
         console.log("Submitted Data:", response.data);

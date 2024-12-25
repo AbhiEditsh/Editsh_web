@@ -53,7 +53,7 @@ function OurClients() {
   const fetchExperiences = async () => {
     try {
       const response = await axios.get(
-        "https://editsh-back.onrender.com/api/Clients/view"
+        "https://editsh-back-anft.onrender.com/api/Clients/view"
       );
       console.log(response);
       setClients(response?.data?.data);

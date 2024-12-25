@@ -11,7 +11,7 @@ export const BlogProvider = ({ children }) => {
   
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get("https://editsh-back.onrender.com/api/blogs/view");
+      const response = await axios.get("https://editsh-back-anft.onrender.com/api/blogs/view");
       setBlogs(response?.data);
     } catch (err) {
       console.error(err);

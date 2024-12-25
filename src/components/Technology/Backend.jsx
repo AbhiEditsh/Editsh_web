@@ -27,14 +27,14 @@ function Backend() {
       title: "Nodejs Development",
       description:
         "NodeJS is iconic for building backends of apps that are real-time, requires heavy traffic or data, and code compatibility on many platforms.",
-      link: "backend/nodejsDevelopment",
+      link: "/backend/nodejsDevelopment",
     },
     {
       icon: icon3,
       title: ".NET Development",
       description:
         "Editsh builds custom web, mobile and Windows based app solutions with .NET framework to deliver scalability, security and power-packed performance.",
-      link: "backend/netDevelopment",
+      link: "/backend/netDevelopment",
     },
     {
       icon: icon5,
