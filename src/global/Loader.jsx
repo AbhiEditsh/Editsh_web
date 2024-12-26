@@ -1,22 +1,12 @@
-import React from 'react';
-import CircularProgress from '@mui/material/CircularProgress';
-import Box from '@mui/material/Box';
-import { useTheme } from '@emotion/react';
+import React from "react";
+import "../assets/Css/Loader.css";
 
 const Loader = () => {
-  const theme = useTheme();
-
   return (
-    <Box
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      height="100vh"
-    >
-      <CircularProgress sx={{
-        color: theme.palette.secondary.main,
-      }}/>
-    </Box>
+    <div class="main">
+      <h2 class="first">Editsh</h2>
+      <h2 class="second">Editsh</h2>
+    </div>
   );
 };
 

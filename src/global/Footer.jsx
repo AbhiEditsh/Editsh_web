@@ -523,10 +523,10 @@ const Footer = () => {
                   <Box
                     sx={{
                       backgroundColor: theme.palette.black,
-                      width: "50px",
-                      height: "50px",
+                      width: "40px",
+                      height: "40px",
                       margin: "auto",
-                      lineHeight: "60px",
+                      lineHeight: "50px",
                       mr: 2,
                       textAlign: "center",
                       borderRadius: "50%",
@@ -538,8 +538,9 @@ const Footer = () => {
                     }}
                   >
                     <social.Icon
+                      size="small"
                       sx={{
-                        fontSize: "28px",
+                        fontSize: "24px",
                         color: theme.palette.white,
                         textAlign: "center",
                       }}
