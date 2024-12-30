@@ -42,7 +42,7 @@ const ScrollToTop = ({ children }) => {
 // WhatsApp Button component
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+9196011 75985";
+    const phoneNumber = "+919601175985";
     const message = "Hello, I'm reaching out from your website!";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
@@ -60,6 +60,7 @@ const WhatsAppButton = () => {
           height: "50px",
           padding: "10px",
           borderRadius: "50%",
+          cursor: "pointer",
         }}
         onClick={handleWhatsAppClick}
       />
