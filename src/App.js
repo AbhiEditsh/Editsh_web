@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Confetti from "react-confetti";
 import "./App.css";
 import "aos/dist/aos.css";
 import Footer from "./global/Footer";
@@ -46,11 +47,26 @@ function ScrollToTop() {
 
 function App() {
   const [loading, setLoading] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     setLoading(true);
 
+    // Check if confetti has already been shown
+    const hasShownConfetti = localStorage.getItem("hasShownConfetti");
+
+    if (!hasShownConfetti) {
+      setShowConfetti(true); // Show confetti
+      localStorage.setItem("hasShownConfetti", "true"); // Mark as shown
+
+      // Stop confetti after 5 seconds
+      setTimeout(() => {
+        setShowConfetti(false);
+      }, 5000);
+    }
+
+    // Simulate page loading
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1000);
@@ -60,6 +76,7 @@ function App() {
 
   return (
     <>
+      {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
       <Header />
       <ScrollToTop />
       <DefaultSEO />
@@ -78,57 +95,30 @@ function App() {
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blogs/:id" element={<BlogsDetails />} />
 
-          {/* Portfolio*/}
+          {/* Portfolio */}
           <Route path="/portfolio" element={<Portifolio />} />
 
           {/* Technology */}
           <Route path="/technology" element={<Technology />} />
 
-          {/* ==========Mobile======== */}
+          {/* Mobile */}
           <Route path="/mobile" element={<Mobile />} />
-          <Route
-            path="/mobile/iosAppDevelopment"
-            element={<IosAppDevelopmet />}
-          />
-          <Route
-            path="/mobile/androidAppDevelopment"
-            element={<AndroidAppDevelopment />}
-          />
-          <Route
-            path="/mobile/reactNativeAppDevelopment"
-            element={<ReactNativeAppDevelopment />}
-          />
-          <Route
-            path="/mobile/FlutterAppDevelopment"
-            element={<FlutterAppdeveopment />}
-          />
+          <Route path="/mobile/iosAppDevelopment" element={<IosAppDevelopmet />} />
+          <Route path="/mobile/androidAppDevelopment" element={<AndroidAppDevelopment />} />
+          <Route path="/mobile/reactNativeAppDevelopment" element={<ReactNativeAppDevelopment />} />
+          <Route path="/mobile/FlutterAppDevelopment" element={<FlutterAppdeveopment />} />
 
-          {/*=================== Frontend ============*/}
+          {/* Frontend */}
           <Route path="/frontend" element={<Frontend />} />
-          <Route
-            path="/frontend/angularJsDevelopment"
-            element={<AngularJsDeveloment />}
-          />
-          <Route
-            path="/frontend/reactJsDevelopment"
-            element={<ReactjsDevelopment />}
-          />
-          <Route
-            path="/frontend/vueJsDevelopment"
-            element={<VueJsdevelopment />}
-          />
+          <Route path="/frontend/angularJsDevelopment" element={<AngularJsDeveloment />} />
+          <Route path="/frontend/reactJsDevelopment" element={<ReactjsDevelopment />} />
+          <Route path="/frontend/vueJsDevelopment" element={<VueJsdevelopment />} />
 
-          {/*=================== Backend =================*/}
+          {/* Backend */}
           <Route path="/backend" element={<Backend />} />
-          <Route
-            path="backend/nodejsDevelopment"
-            element={<NodejsDevelopment />}
-          />
+          <Route path="backend/nodejsDevelopment" element={<NodejsDevelopment />} />
           <Route path="backend/netDevelopment" element={<NetDevelopment />} />
-          <Route
-            path="backend/pythonDevelopment"
-            element={<PhythonDevelopment />}
-          />
+          <Route path="backend/pythonDevelopment" element={<PhythonDevelopment />} />
 
           <Route path="/term" element={<Term />} />
           <Route path="/policy" element={<Policy />} />
