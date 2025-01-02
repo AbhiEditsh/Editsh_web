@@ -165,6 +165,7 @@ img {
   }
   .logo-inner img {
     height: 45px;
+    width: 80%;
   }
 }
 @media (max-width: 800px) {
