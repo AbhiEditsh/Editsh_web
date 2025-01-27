@@ -236,7 +236,7 @@ const Footer = () => {
                     </Box>
 
                     <Box>
-                      <Link to="https://maps.app.goo.gl/DQFfS6Ad45svRPqT7">
+                      <Link to="https://maps.app.goo.gl/DQFfS6Ad45svRPqT7" target="_blank">
                         <address
                           style={{
                             color: theme.palette.black,
