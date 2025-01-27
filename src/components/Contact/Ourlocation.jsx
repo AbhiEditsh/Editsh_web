@@ -85,9 +85,9 @@ function Ourlocation() {
             {
               icon: AddLocationAltIcon,
               title: "Our Location",
-              link: "#",
+              link: "https://maps.app.goo.gl/DQFfS6Ad45svRPqT7",
               linkText:
-                "414, 4th Floor, Pavitra Point, Opp. BBC, Near Savaliya Circle, Surat, Gujarat 395010",
+                "102, Shyamdham Chowk, Devikrupa Society, Yogeshwar Society, Nana Varachha, Surat, Gujarat 395010",
             },
             {
               icon: QueryBuilderIcon,
