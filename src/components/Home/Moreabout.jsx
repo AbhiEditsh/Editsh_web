@@ -3,7 +3,7 @@ import React from "react";
 import theme from "../../theme/theme";
 import { Link } from "react-router-dom";
 
-function Moreabout() {
+function MoreAbout() {
   return (
     <>
       <Container>
@@ -71,7 +71,7 @@ function Moreabout() {
                     textTransform:"capitalize",
                     "&:hover": {
                       transition: "transform 0.3s ease-in-out",
-                      backgroundColor: theme.palette.lightwhite,
+                      backgroundColor: theme.palette.lightWhite,
                     },
                   }}
                 >
@@ -94,4 +94,4 @@ function Moreabout() {
   );
 }
 
-export default Moreabout;
+export default MoreAbout;

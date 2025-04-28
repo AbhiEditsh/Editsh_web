@@ -3,7 +3,7 @@ import { Box, Container, Grid, Link, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import port1 from "../../assets/portfolio/portfolio1.jpg";
 
-function Portfolio() {
+function Portfolios() {
   const theme = useTheme();
 
   return (
@@ -271,8 +271,94 @@ function Portfolio() {
           </Grid>
         </Grid>
       </Box>
+      <Box
+        sx={{
+          py: {
+            xs: 2,
+            md: 4,
+            lg: 6,
+          },
+        }}
+      >
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            background: theme.palette.primary.main,
+            borderRadius: "10px",
+            p: 2,
+          }}
+        >
+          <Grid
+            item
+            xs={12}
+            lg={6}
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <Box>
+              <Typography
+                sx={{
+                  fontWeight: "700",
+                  fontSize: "30px",
+                  mb: 2,
+                }}
+              >
+               Janki Herbals Pvt Ltd
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: "16px",
+                }}
+              >
+                Janki Herbals Pvt Ltd delivers high-quality, innovative private
+                label cosmetics, including conditioners and skincare. As a
+                global leader, we prioritize customer satisfaction and set new
+                industry standards. Partner with us today.
+              </Typography>
+
+              <Box
+                sx={{
+                  display: "flex",
+                  width: "150px",
+                  height: "50px",
+                  mt: 3,
+                }}
+              >
+                <Link
+                  to="/"
+                  target="_blank"
+                  style={{
+                    display: "block",
+                    width: "100%",
+                    cursor: "pointer",
+                  }}
+                >
+                  <img
+                    src="https://i.postimg.cc/0NknfcF7/appstore.png"
+                    alt="AppImage"
+                  />
+                </Link>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            lg={6}
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <img
+              src="https://i.postimg.cc/Dzdg9yBq/Janki.jpg"
+              alt="Portfolio"
+              style={{ width: "100%", height: "auto", borderRadius: "10px" }}
+            />
+          </Grid>
+        </Grid>
+      </Box>
     </Container>
   );
 }
 
-export default Portfolio;
+export default Portfolios;

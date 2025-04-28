@@ -1,5 +1,5 @@
 import React from "react";
-import Pagetitle from "../global/Pagetitle";
+import PageTitle from "../global/PageTitle";
 import {
   Box,
   Container,
@@ -33,7 +33,7 @@ function Blog() {
   return (
     <>
       <SEO title="Blog at Editsh - Let's Share Some Facts and Solutions" />
-      <Pagetitle
+      <PageTitle
         title={`Blogs`}
         description={`
         We are Surat-based IT Solution Providers committed to providing the best services for the growth of our valuable clients and their varied businesses.`}
@@ -209,7 +209,7 @@ function Blog() {
                     <Box>
                       <Typography
                         sx={{
-                          color: theme.palette.lightwhite,
+                          color: theme.palette.lightWhite,
                           fontSize: "14px",
                           py: 1,
                           fontWeight: "600",

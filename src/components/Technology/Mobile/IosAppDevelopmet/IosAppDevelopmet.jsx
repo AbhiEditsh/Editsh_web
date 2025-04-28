@@ -1,31 +1,31 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import Pagetitle from "../../../../global/Pagetitle";
+import PageTitle from "../../../../global/PageTitle";
 import { useTheme } from "@emotion/react";
 import { Link } from "react-router-dom";
 import TimelineIcon from "@mui/icons-material/Timeline";
-import whychooseus from "../../../../assets/Technoogy/Mobile/iosDevelopment/iosservice//wcu.webp";
-import { Titleanimation } from "../../../../global/Titleanimation";
-import icon1 from "../../../../assets/Technoogy/Mobile/iosDevelopment/iosservice/i1.png";
-import icon2 from "../../../../assets/Technoogy/Mobile/iosDevelopment/iosservice/i2.png";
-import icon3 from "../../../../assets/Technoogy/Mobile/iosDevelopment/iosservice/i3.png";
-import icon4 from "../../../../assets/Technoogy/Mobile/iosDevelopment/iosservice/i4.png";
-import icon5 from "../../../../assets/Technoogy/Mobile/iosDevelopment/iosservice/i5.png";
-import icon6 from "../../../../assets/Technoogy/Mobile/iosDevelopment/iosservice/i6.png";
-import icon7 from "../../../../assets/Technoogy/Mobile/iosDevelopment/iosservice/i7.png";
-import icon8 from "../../../../assets/Technoogy/Mobile/iosDevelopment/iosservice/i8.png";
-import ios from "../../../../assets/Technoogy/Mobile/iosDevelopment/ios.png";
+import whychooseus from "../../../../assets/Technology/Mobile/iosDevelopment/iosservice//wcu.webp";
+import { TitleAnimation } from "../../../../global/TitleAnimation";
+import icon1 from "../../../../assets/Technology/Mobile/iosDevelopment/iosservice/i1.png";
+import icon2 from "../../../../assets/Technology/Mobile/iosDevelopment/iosservice/i2.png";
+import icon3 from "../../../../assets/Technology/Mobile/iosDevelopment/iosservice/i3.png";
+import icon4 from "../../../../assets/Technology/Mobile/iosDevelopment/iosservice/i4.png";
+import icon5 from "../../../../assets/Technology/Mobile/iosDevelopment/iosservice/i5.png";
+import icon6 from "../../../../assets/Technology/Mobile/iosDevelopment/iosservice/i6.png";
+import icon7 from "../../../../assets/Technology/Mobile/iosDevelopment/iosservice/i7.png";
+import icon8 from "../../../../assets/Technology/Mobile/iosDevelopment/iosservice/i8.png";
+import ios from "../../../../assets/Technology/Mobile/iosDevelopment/ios.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import fabricicon from "../../../../assets/Technoogy/Mobile/iosDevelopment/IosTech/fabric-icon.png";
-import XCode from "../../../../assets/Technoogy/Mobile/iosDevelopment/IosTech/XCode.png";
-import swift from "../../../../assets/Technoogy/Mobile/iosDevelopment/IosTech/swift.png";
-import RealM from "../../../../assets/Technoogy/Mobile/iosDevelopment/IosTech/RealM.png";
-import objectivec from "../../../../assets/Technoogy/Mobile/iosDevelopment/IosTech/objective-c.png";
-import kingfisher from "../../../../assets/Technoogy/Mobile/iosDevelopment/IosTech/kingfisher.png";
-import firebase from "../../../../assets/Technoogy/Mobile/iosDevelopment/IosTech/firebase-ios.png";
-import cocoatouchicon from "../../../../assets/Technoogy/Mobile/iosDevelopment/IosTech/cocoa-touch-icon.png";
+import fabricicon from "../../../../assets/Technology/Mobile/iosDevelopment/IosTech/fabric-icon.png";
+import XCode from "../../../../assets/Technology/Mobile/iosDevelopment/IosTech/XCode.png";
+import swift from "../../../../assets/Technology/Mobile/iosDevelopment/IosTech/swift.png";
+import RealM from "../../../../assets/Technology/Mobile/iosDevelopment/IosTech/RealM.png";
+import objectivec from "../../../../assets/Technology/Mobile/iosDevelopment/IosTech/objective-c.png";
+import kingfisher from "../../../../assets/Technology/Mobile/iosDevelopment/IosTech/kingfisher.png";
+import firebase from "../../../../assets/Technology/Mobile/iosDevelopment/IosTech/firebase-ios.png";
+import cocoatouchicon from "../../../../assets/Technology/Mobile/iosDevelopment/IosTech/cocoa-touch-icon.png";
 import ProjectIndustry from "../../../../global/ProjectIndustry";
 import RequestQuote from "../../../../global/RequestQuote";
 import RIghtBtn from "../../../../global/Button/RIghtBtn";
@@ -135,7 +135,7 @@ function IosAppDevelopmet() {
   return (
     <>
       <SEO title="Editsh - Top IOS App development Company" />
-      <Pagetitle title="IOS App Development" />
+      <PageTitle title="IOS App Development" />
       <Box
         sx={{
           py: {
@@ -385,7 +385,7 @@ function IosAppDevelopmet() {
         }}
       >
         <Container>
-          <Titleanimation title={`iPhone Mobile App Development Services`} />
+          <TitleAnimation title={`iPhone Mobile App Development Services`} />
           <Typography
             sx={{
               fontSize: "14px",
@@ -491,7 +491,7 @@ function IosAppDevelopmet() {
           },
         }}
       >
-        <Titleanimation title={`Technologies Our iPhone App Developers Use`} />
+        <TitleAnimation title={`Technologies Our iPhone App Developers Use`} />
         <Container>
           <Typography
             sx={{

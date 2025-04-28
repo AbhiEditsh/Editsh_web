@@ -2,7 +2,7 @@ import { useTheme } from "@emotion/react";
 import { Box, Container, Grid, Button } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Titleanimation } from "../../global/Titleanimation";
+import { TitleAnimation } from "../../global/TitleAnimation";
 import axios from "axios";
 
 function OurClients() {
@@ -12,7 +12,7 @@ function OurClients() {
   const fetchClients = async () => {
     try {
       const response = await axios.get(
-        "https://editsh-back-anft.onrender.com/api/clients/view"
+        `${process.env.REACT_APP_API_BASE_URL}/clients/view`
       );
       setClients(response?.data?.data);
     } catch (err) {
@@ -68,7 +68,7 @@ function OurClients() {
   return (
     <Box>
       <Container>
-        <Titleanimation title={`Our clients`} />
+        <TitleAnimation title={`Our clients`} />
         <Box sx={{ py: { sm: 6, lg: 6, xl: 10 } }}>
           <Grid
             container
@@ -100,8 +100,7 @@ function OurClients() {
               justifyContent: "center",
               mt: 4,
             }}
-          >
-          </Box>
+          ></Box>
         </Box>
       </Container>
     </Box>

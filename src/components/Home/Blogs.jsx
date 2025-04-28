@@ -3,7 +3,7 @@ import React from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Titleanimation } from "../../global/Titleanimation";
+import { TitleAnimation } from "../../global/TitleAnimation";
 import { Link } from "react-router-dom";
 import { useBlogs } from "../../Context/BlogContext";
 
@@ -29,7 +29,7 @@ function Blogs() {
             fontFamily: theme.typography.fontFamily,
           }}
         >
-          <Titleanimation title={`Our Blogs`} />
+          <TitleAnimation title={`Our Blogs`} />
         </Box>
         <Grid
           container
@@ -94,7 +94,7 @@ function Blogs() {
                 <Box>
                   <Typography
                     sx={{
-                      color: theme.palette.lightwhite,
+                      color: theme.palette.lightWhite,
                       fontSize: "16px",
                       fontWeight: "600",
                       py: 1,

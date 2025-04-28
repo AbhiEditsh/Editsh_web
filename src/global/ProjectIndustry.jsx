@@ -1,19 +1,19 @@
 import React from "react";
-import Taxbooking from "../../src/assets/Technoogy/Industry we Serve/taxi-book.svg";
-import EducationLearning from "../../src/assets/Technoogy/Industry we Serve/education.svg";
-import Helthcarefitness from "../../src/assets/Technoogy/Industry we Serve/fitness.svg";
-import FoodResturentMessages from "../../src/assets/Technoogy/Industry we Serve/food-app.svg";
-import SportsApp from "../../src/assets/Technoogy/Industry we Serve/fantasy.svg";
-import GymManagement from "../../src/assets/Technoogy/Industry we Serve/exercise.svg";
-import DattingApp from "../../src/assets/Technoogy/Industry we Serve/dating-app.svg";
-import GroceryApp from "../../src/assets/Technoogy/Industry we Serve/groccery.svg";
-import MediaEntertainmentApp from "../../src/assets/Technoogy/Industry we Serve/entertainment.svg";
-import TravelAppSolution from "../../src/assets/Technoogy/Industry we Serve/travel-ticket.svg";
-import DoctorAppointmentApp from "../../src/assets/Technoogy/Industry we Serve/online-appointment.svg";
-import EventsTickets from "../../src/assets/Technoogy/Industry we Serve/event-calender.svg";
+import Taxbooking from "../../src/assets/Technology/Industry we Serve/taxi-book.svg";
+import EducationLearning from "../../src/assets/Technology/Industry we Serve/education.svg";
+import Helthcarefitness from "../../src/assets/Technology/Industry we Serve/fitness.svg";
+import FoodResturentMessages from "../../src/assets/Technology/Industry we Serve/food-app.svg";
+import SportsApp from "../../src/assets/Technology/Industry we Serve/fantasy.svg";
+import GymManagement from "../../src/assets/Technology/Industry we Serve/exercise.svg";
+import DattingApp from "../../src/assets/Technology/Industry we Serve/dating-app.svg";
+import GroceryApp from "../../src/assets/Technology/Industry we Serve/groccery.svg";
+import MediaEntertainmentApp from "../../src/assets/Technology/Industry we Serve/entertainment.svg";
+import TravelAppSolution from "../../src/assets/Technology/Industry we Serve/travel-ticket.svg";
+import DoctorAppointmentApp from "../../src/assets/Technology/Industry we Serve/online-appointment.svg";
+import EventsTickets from "../../src/assets/Technology/Industry we Serve/event-calender.svg";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
-import { Titleanimation } from "./Titleanimation";
+import { TitleAnimation } from "./TitleAnimation";
 
 function ProjectIndustry() {
   const theme = useTheme();
@@ -91,7 +91,7 @@ function ProjectIndustry() {
           },
         }}
       >
-        <Titleanimation title="Industry growth with Us" />
+        <TitleAnimation title="Industry growth with Us" />
         <Container>
           <Typography
             sx={{
@@ -137,7 +137,7 @@ function ProjectIndustry() {
                     justifyContent: "center",
                     alignItems: "center",
                     "&:hover": {
-                      border: `1px solid ${theme.palette.lightwhite}`,
+                      border: `1px solid ${theme.palette.lightWhite}`,
                     },
                   }}
                 >

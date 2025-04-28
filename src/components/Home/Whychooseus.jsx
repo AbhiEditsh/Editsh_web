@@ -3,7 +3,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { TitleTwoAnimation } from "../../global/TitleTwoAnimation";
 
-function Whychooseus() {
+function WhyChooseUs() {
   const theme = useTheme();
 
   return (
@@ -48,7 +48,7 @@ function Whychooseus() {
                   py: { sm: 2, md: 6, lg: 8 },
                 }}
               >
-                {whyChoooseBox({
+                {whyChooseBox({
                   theme,
                   imgSrc:
                     "https://i.postimg.cc/pLq6NQwY/quality-badge-6161728-5073619.webp",
@@ -56,14 +56,14 @@ function Whychooseus() {
                   description:
                     "We know that what is value of quality. We never compromise with the quality of our work and design.",
                 })}
-                {whyChoooseBox({
+                {whyChooseBox({
                   theme,
                   imgSrc: "https://i.postimg.cc/fyvqCxZP/6648986.webp",
                   title: "Innovation",
                   description:
                     "We bring new and innovative ideas to the table, ensuring that our solutions are both creative and effective.",
                 })}
-                {whyChoooseBox({
+                {whyChooseBox({
                   theme,
                   imgSrc: "https://i.postimg.cc/4NG2F4Lg/4745552.webp",
                   title: "Expertise",
@@ -79,9 +79,9 @@ function Whychooseus() {
   );
 }
 
-export default Whychooseus;
+export default WhyChooseUs;
 
-const whyChoooseBox = ({ theme, imgSrc, title, description }) => (
+const whyChooseBox = ({ theme, imgSrc, title, description }) => (
   <Grid
     item
     xs={12}

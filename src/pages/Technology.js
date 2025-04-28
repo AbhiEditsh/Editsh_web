@@ -2,18 +2,18 @@ import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import { Link } from "react-router-dom";
-import Pagetitle from "../global/Pagetitle";
-// import icon1 from "../assets/Technoogy/icon1.png";
-import icon2 from "../assets/Technoogy/icon2.png";
-import icon3 from "../assets/Technoogy/icon3.png";
-import ico1 from "../assets/Technoogy/Web_app/ico1.png";
-import ico2 from "../assets/Technoogy/Web_app/ico2.png";
-import ico3 from "../assets/Technoogy/Web_app/ico3.png";
-import ico4 from "../assets/Technoogy/Web_app/ico4.png";
-import ico5 from "../assets/Technoogy/Web_app/ico5.webp";
-import ico6 from "../assets/Technoogy/Web_app/ico6.png";
-import { Titleanimation } from "../global/Titleanimation";
-import project from "../../src/assets/Technoogy/CakeFactory.webp";
+import PageTitle from "../global/PageTitle";
+// import icon1 from "../assets/Technology/icon1.png";
+import icon2 from "../assets/Technology/icon2.png";
+import icon3 from "../assets/Technology/icon3.png";
+import ico1 from "../assets/Technology/Web_app/ico1.png";
+import ico2 from "../assets/Technology/Web_app/ico2.png";
+import ico3 from "../assets/Technology/Web_app/ico3.png";
+import ico4 from "../assets/Technology/Web_app/ico4.png";
+import ico5 from "../assets/Technology/Web_app/ico5.webp";
+import ico6 from "../assets/Technology/Web_app/ico6.png";
+import { TitleAnimation } from "../global/TitleAnimation";
+import project from "../../src/assets/Technology/CakeFactory.webp";
 
 const technologyItems = [
   {
@@ -44,7 +44,7 @@ function Technology() {
 
   return (
     <>
-      <Pagetitle
+      <PageTitle
         title="Technology"
         description={`
         We are Surat-based IT Solution Providers committed to providing the best services for the growth of our valuable clients and their varied businesses.`}
@@ -56,7 +56,7 @@ function Technology() {
           backgroundColor: theme.palette.primary.main,
         }}
       >
-        <Titleanimation title="Technology spectrum we have" />
+        <TitleAnimation title="Technology spectrum we have" />
         <Box sx={{ py: { sm: 4, xs: 3, lg: 8 } }}>
           <Container>
             <Grid container rowSpacing={1} columnSpacing={2}>
@@ -69,7 +69,7 @@ function Technology() {
                         flexDirection: "column",
                         justifyContent: "space-between",
                         height: "100%",
-                        border: `5px solid ${theme.palette.lightwhite}`,
+                        border: `5px solid ${theme.palette.lightWhite}`,
 
                         p: 4,
                       }}
@@ -96,7 +96,7 @@ function Technology() {
                         sx={{
                           fontSize: "14px",
                           textAlign: "center",
-                          color: theme.palette.lightwhite,
+                          color: theme.palette.lightWhite,
                         }}
                       >
                         {item.description}
@@ -111,11 +111,11 @@ function Technology() {
       </Box>
       <Box sx={{ py: { sm: 4, xs: 3, lg: 8 } }}>
         <Container>
-          <Titleanimation title="How does Editsh help?" />
+          <TitleAnimation title="How does Editsh help?" />
           <Typography
             sx={{
               fs: { sm: "18px", lg: "12px" },
-              color: theme.palette.lightwhite,
+              color: theme.palette.lightWhite,
               textAlign: "center",
               letterSpacing: "0.5px",
               py: 4,

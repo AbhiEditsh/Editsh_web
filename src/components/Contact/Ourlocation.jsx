@@ -12,7 +12,7 @@ const ContactBox = ({ icon: Icon, title, link, linkText }) => {
   return (
     <Box
       sx={{
-        backgroundColor: theme.palette.lightwhite,
+        backgroundColor: theme.palette.lightWhite,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -28,7 +28,7 @@ const ContactBox = ({ icon: Icon, title, link, linkText }) => {
     >
       <Box>
         <div className="service-icon">
-          <Icon sx={{ color: theme.palette.lightwhite, fontSize: "30px" }} />
+          <Icon sx={{ color: theme.palette.lightWhite, fontSize: "30px" }} />
         </div>
       </Box>
       <Typography
@@ -57,7 +57,7 @@ const ContactBox = ({ icon: Icon, title, link, linkText }) => {
   );
 };
 
-function Ourlocation() {
+function OurLocation() {
   const theme = useTheme();
 
   return (
@@ -85,9 +85,9 @@ function Ourlocation() {
             {
               icon: AddLocationAltIcon,
               title: "Our Location",
-              link: "#",
+              link: "https://maps.app.goo.gl/E9nr33rRpApT2Cw39",
               linkText:
-                "414, 4th Floor, Pavitra Point, Opp. BBC, Near Savaliya Circle, Surat, Gujarat 395010",
+                "Shyamdham mandir, Thakkar School, 425, Sahajanand Hub, Gadhpur Rd, in front of NC, Surat, Gujarat 395006",
             },
             {
               icon: QueryBuilderIcon,
@@ -105,4 +105,4 @@ function Ourlocation() {
   );
 }
 
-export default Ourlocation;
+export default OurLocation;

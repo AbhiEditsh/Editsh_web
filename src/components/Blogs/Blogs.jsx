@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
-import { Titleanimation } from "../../global/Titleanimation";
+import { TitleAnimation } from "../../global/TitleAnimation";
 import { Link } from "react-router-dom";
 import { useBlogs } from "../../Context/BlogContext";
 
@@ -32,7 +32,7 @@ function Blogs() {
             fontFamily: theme.typography.fontFamily,
           }}
         >
-          <Titleanimation title={`Our Blogs`} />
+          <TitleAnimation title={`Our Blogs`} />
         </Box>
         <Grid
           container
@@ -125,7 +125,7 @@ function Blogs() {
                         <Box>
                           <Typography
                             sx={{
-                              color: theme.palette.lightwhite,
+                              color: theme.palette.lightWhite,
                               fontSize: "14px",
                               py: 1,
                               fontWeight: "600",

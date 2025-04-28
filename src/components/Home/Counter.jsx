@@ -12,7 +12,7 @@ const Counter = () => {
 
   useEffect(() => {
     axios
-      .get("https://editsh-back-anft.onrender.com/api/experince/view")
+      .get(`${process.env.REACT_APP_API_BASE_URL}/experince/view`)
       .then((response) => setExperiences(response.data.data))
       .catch((err) => console.error(err));
   }, []);
@@ -64,7 +64,7 @@ const Counter = () => {
                           fontWeight: "bold",
                           color: theme.palette.white,
                           textAlign: "center",
-                          Typography:theme.typography.fontFamily,
+                          Typography: theme.typography.fontFamily,
                           fontSize: {
                             xs: "24px",
                             sm: "26px",
@@ -79,7 +79,7 @@ const Counter = () => {
                         sx={{
                           fontWeight: "bold",
                           color: theme.palette.white,
-                          Typography:theme.typography.fontFamily,
+                          Typography: theme.typography.fontFamily,
                           textAlign: "center",
                           fontSize: {
                             xs: "35px",

@@ -8,7 +8,7 @@ const runAnimation = keyframes`
   100% { left: 100%; }
 `;
 
-export const Titleanimation = ({ title }) => {
+export const TitleAnimation = ({ title }) => {
   const theme = useTheme();
   return (
     <>
@@ -44,7 +44,7 @@ export const Titleanimation = ({ title }) => {
               top: "50%",
               left: "0%",
               transform: "translateY(-50%)",
-              bgcolor: theme.palette.lightwhite,
+              bgcolor: theme.palette.lightWhite,
               animation: `${runAnimation} 2s infinite linear alternate-reverse`,
             }}
           ></Typography>

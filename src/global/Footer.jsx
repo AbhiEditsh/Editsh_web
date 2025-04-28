@@ -236,7 +236,7 @@ const Footer = () => {
                     </Box>
 
                     <Box>
-                      <Link to="https://maps.app.goo.gl/qV6mdXRGmPpmxGP26">
+                      <Link to="https://maps.app.goo.gl/E9nr33rRpApT2Cw39">
                         <address
                           style={{
                             color: theme.palette.black,
@@ -248,8 +248,8 @@ const Footer = () => {
                             maxWidth: "250px",
                           }}
                         >
-                          414, 4th Floor, Pavitraa Point, Opp. BBC, Near
-                          Savaliya Circle, Surat, Gujarat 395010
+                          Shyamdham mandir, Thakkar School, 425, Sahajanand Hub,
+                          Gadhpur Rd, in front of NC, Surat, Gujarat 395006.
                         </address>
                       </Link>
                     </Box>

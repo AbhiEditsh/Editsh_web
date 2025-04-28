@@ -6,35 +6,35 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
-import frame1 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/framwork & library/docker-icon.png";
-import frame2 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/framwork & library/es-link-icon.png";
-import frame3 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/framwork & library/javascript-icon.png";
-import frame4 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/framwork & library/mobx-icon.png";
-import frame5 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/framwork & library/react-router-icon.png";
-import frame6 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/framwork & library/redux-icon.png";
-import frame7 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/framwork & library/rx-js-icon.png";
-import frame8 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/framwork & library/typescript-icon.png";
+import frame1 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/framwork & library/docker-icon.png";
+import frame2 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/framwork & library/es-link-icon.png";
+import frame3 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/framwork & library/javascript-icon.png";
+import frame4 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/framwork & library/mobx-icon.png";
+import frame5 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/framwork & library/react-router-icon.png";
+import frame6 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/framwork & library/redux-icon.png";
+import frame7 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/framwork & library/rx-js-icon.png";
+import frame8 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/framwork & library/typescript-icon.png";
 
-import data1 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Database/firebase-icon.png";
-import data2 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Database/google-cloud-sql.svg";
-import data3 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Database/mongo-db-icon.png";
-import data4 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Database/postgre-icon.png";
-import data5 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Database/realm-icon.png";
+import data1 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Database/firebase-icon.png";
+import data2 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Database/google-cloud-sql.svg";
+import data3 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Database/mongo-db-icon.png";
+import data4 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Database/postgre-icon.png";
+import data5 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Database/realm-icon.png";
 
-import tool1 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Tools/vs-code-icon.png";
-import tool2 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Tools/gradle-icon.png";
-import tool3 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Tools/native-base-icon.png";
-import tool4 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Tools/expo-icon.png";
-import tool5 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Tools/xcode-icon.png";
-import tool6 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Tools/npm-icon.png";
-import tool7 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Tools/yarn-icon.png";
-import tool8 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Tools/axios-icon.png";
+import tool1 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Tools/vs-code-icon.png";
+import tool2 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Tools/gradle-icon.png";
+import tool3 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Tools/native-base-icon.png";
+import tool4 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Tools/expo-icon.png";
+import tool5 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Tools/xcode-icon.png";
+import tool6 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Tools/npm-icon.png";
+import tool7 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Tools/yarn-icon.png";
+import tool8 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Tools/axios-icon.png";
 
-import palat1 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/plateform/react-icon.png";
-import palat2 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/plateform/saga-icon.png";
-import palat3 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/plateform/next-js-icon.png";
-import palat4 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/plateform/material-ui-icon.png";
-import palat5 from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/plateform/storybook-icon.png";
+import palat1 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/plateform/react-icon.png";
+import palat2 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/plateform/saga-icon.png";
+import palat3 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/plateform/next-js-icon.png";
+import palat4 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/plateform/material-ui-icon.png";
+import palat5 from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/plateform/storybook-icon.png";
 import { useTheme } from "@emotion/react";
 
 // Component for each tab panel

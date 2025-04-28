@@ -8,35 +8,35 @@ import Grid from "@mui/material/Grid";
 import { useTheme } from "@emotion/react";
 
 // Images
-import frame1 from "../../../../assets/Technoogy/front/reactjs/Technology/framework/gulp-icon.png";
-import frame2 from "../../../../assets/Technoogy/front/reactjs/Technology/framework/json-icon.png";
-import frame3 from "../../../../assets/Technoogy/front/reactjs/Technology/framework/npm-icon.png";
-import frame4 from "../../../../assets/Technoogy/front/reactjs/Technology/framework/redis-icon.png";
-import frame5 from "../../../../assets/Technoogy/front/reactjs/Technology/framework/rest-icon.png";
-import frame6 from "../../../../assets/Technoogy/front/reactjs/Technology/framework/soap-icon.png";
-import frame7 from "../../../../assets/Technoogy/front/reactjs/Technology/framework/socket-icon.png";
-import frame8 from "../../../../assets/Technoogy/front/reactjs/Technology/framework/xml-file.png";
+import frame1 from "../../../../assets/Technology/front/reactjs/Technology/framework/gulp-icon.png";
+import frame2 from "../../../../assets/Technology/front/reactjs/Technology/framework/json-icon.png";
+import frame3 from "../../../../assets/Technology/front/reactjs/Technology/framework/npm-icon.png";
+import frame4 from "../../../../assets/Technology/front/reactjs/Technology/framework/redis-icon.png";
+import frame5 from "../../../../assets/Technology/front/reactjs/Technology/framework/rest-icon.png";
+import frame6 from "../../../../assets/Technology/front/reactjs/Technology/framework/soap-icon.png";
+import frame7 from "../../../../assets/Technology/front/reactjs/Technology/framework/socket-icon.png";
+import frame8 from "../../../../assets/Technology/front/reactjs/Technology/framework/xml-file.png";
 
-import uiux1 from "../../../../assets/Technoogy/front/reactjs/Technology/ui-ux/bootstrap-icon.png";
-import uiux2 from "../../../../assets/Technoogy/front/reactjs/Technology/ui-ux/material-ui-icon.png";
-import uiux3 from "../../../../assets/Technoogy/front/reactjs/Technology/ui-ux/antd-icon.png";
-import uiux4 from "../../../../assets/Technoogy/front/reactjs/Technology/ui-ux/telerik-icon.png";
-import uiux5 from "../../../../assets/Technoogy/front/reactjs/Technology/ui-ux/tailwind-icon.png";
+import uiux1 from "../../../../assets/Technology/front/reactjs/Technology/ui-ux/bootstrap-icon.png";
+import uiux2 from "../../../../assets/Technology/front/reactjs/Technology/ui-ux/material-ui-icon.png";
+import uiux3 from "../../../../assets/Technology/front/reactjs/Technology/ui-ux/antd-icon.png";
+import uiux4 from "../../../../assets/Technology/front/reactjs/Technology/ui-ux/telerik-icon.png";
+import uiux5 from "../../../../assets/Technology/front/reactjs/Technology/ui-ux/tailwind-icon.png";
 
-import tool1 from "../../../../assets/Technoogy/front/reactjs/Technology/tools/github-icon.png";
-import tool2 from "../../../../assets/Technoogy/front/reactjs/Technology/tools/slack-icon.png";
-import tool3 from "../../../../assets/Technoogy/front/reactjs/Technology/tools/jirs-icon.png";
-import tool4 from "../../../../assets/Technoogy/front/reactjs/Technology/tools/trello-icon.png";
-import tool5 from "../../../../assets/Technoogy/front/reactjs/Technology/tools/base-camp-icon.png";
+import tool1 from "../../../../assets/Technology/front/reactjs/Technology/tools/github-icon.png";
+import tool2 from "../../../../assets/Technology/front/reactjs/Technology/tools/slack-icon.png";
+import tool3 from "../../../../assets/Technology/front/reactjs/Technology/tools/jirs-icon.png";
+import tool4 from "../../../../assets/Technology/front/reactjs/Technology/tools/trello-icon.png";
+import tool5 from "../../../../assets/Technology/front/reactjs/Technology/tools/base-camp-icon.png";
 
-import p1 from "../../../../assets/Technoogy/front/reactjs/Technology/Skills/react-icon.png";
-import p2 from "../../../../assets/Technoogy/front/reactjs/Technology/Skills/jsx-icon.png";
-import p3 from "../../../../assets/Technoogy/front/reactjs/Technology/Skills/routing-icon.png";
-import p4 from "../../../../assets/Technoogy/front/reactjs/Technology/Skills/redux-icon.png";
-import p5 from "../../../../assets/Technoogy/front/reactjs/Technology/Skills/hooks-icon.png";
-import p6 from "../../../../assets/Technoogy/front/reactjs/Technology/Skills/jest-icon.png";
-import p7 from "../../../../assets/Technoogy/front/reactjs/Technology/Skills/graph-ql-icon.png";
-import p8 from "../../../../assets/Technoogy/front/reactjs/Technology/Skills/typescript-icon.png";
+import p1 from "../../../../assets/Technology/front/reactjs/Technology/Skills/react-icon.png";
+import p2 from "../../../../assets/Technology/front/reactjs/Technology/Skills/jsx-icon.png";
+import p3 from "../../../../assets/Technology/front/reactjs/Technology/Skills/routing-icon.png";
+import p4 from "../../../../assets/Technology/front/reactjs/Technology/Skills/redux-icon.png";
+import p5 from "../../../../assets/Technology/front/reactjs/Technology/Skills/hooks-icon.png";
+import p6 from "../../../../assets/Technology/front/reactjs/Technology/Skills/jest-icon.png";
+import p7 from "../../../../assets/Technology/front/reactjs/Technology/Skills/graph-ql-icon.png";
+import p8 from "../../../../assets/Technology/front/reactjs/Technology/Skills/typescript-icon.png";
 
 function ReactjsPanel(props) {
   const { children, value, index, ...other } = props;

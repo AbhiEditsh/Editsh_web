@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Titleanimation } from "../../global/Titleanimation";
+import { TitleAnimation } from "../../global/TitleAnimation";
 import { Container, Box } from "@mui/material";
 import { styled } from "@mui/system";
 
 const MainContainer = styled(Box)(({ theme }) => ({
   display: "flex",
-  justifyContent:"center", 
+  justifyContent: "center",
   "--s": "130px",
   "--m": "4px",
   "--f": "calc(1.732 * var(--s) + 4 * var(--m) - 1px)",
@@ -53,9 +53,8 @@ function OurClients() {
   const fetchExperiences = async () => {
     try {
       const response = await axios.get(
-        "https://editsh-back-anft.onrender.com/api/Clients/view"
+        `${process.env.REACT_APP_API_BASE_URL}/Clients/view`
       );
-      console.log(response);
       setClients(response?.data?.data);
     } catch (err) {
       console.error(err);
@@ -78,7 +77,7 @@ function OurClients() {
           },
         }}
       >
-        <Titleanimation title="Our clients" />
+        <TitleAnimation title="Our clients" />
         <Box
           sx={{
             py: {

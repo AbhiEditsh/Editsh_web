@@ -99,7 +99,7 @@ const AboutSection = () => {
             width: "50px",
             height: "50px",
             display: "block",
-            backgroundColor: theme.palette.lightwhite,
+            backgroundColor: theme.palette.lightWhite,
             borderRadius: "10%",
             padding: 1,
             position: "absolute",
@@ -170,7 +170,7 @@ const AboutSection = () => {
                   color: theme.palette.text.primary,
                 }}
               >
-                Experienced more than 5 years in web development
+                Experienced more than 5 years in web & App development 
               </Typography>
               <Typography
                 sx={{ fontSize: "14px", color: theme.palette.secondary.main }}

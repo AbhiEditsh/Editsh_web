@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import axios from "axios";
-import Pagetitle from "./Pagetitle";
+import PageTitle from "./PageTitle";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 import {
@@ -37,13 +37,13 @@ function BlogsDetails() {
   const navigate = useNavigate();
   const [comments, setComments] = useState([]);
   const theme = useTheme();
-  const blogUrl = `https://editshtech.vercel.app/blogs/${id}`;
+  const blogUrl = `${process.env.REACT_WEB_URL}/blogs/${id}`;
 
   useEffect(() => {
     const fetchBlog = async () => {
       try {
         const response = await axios.get(
-          `https://editsh-back-anft.onrender.com/api/blogs/${id}`
+          `${process.env.REACT_APP_API_BASE_URL}/blogs/${id}`
         );
         setBlog(response?.data?.data);
       } catch (err) {
@@ -54,9 +54,8 @@ function BlogsDetails() {
     const fetchComments = async () => {
       try {
         const response = await axios.get(
-          `https://editsh-back-anft.onrender.com/api/comment/${id}`
+          `${process.env.REACT_APP_API_BASE_URL}/comment/${id}`
         );
-
         setComments(response?.data);
       } catch (err) {
         console.error(err);
@@ -74,12 +73,12 @@ function BlogsDetails() {
     };
     try {
       await axios.post(
-        `https://editsh-back-anft.onrender.com/api/comment/add`,
+        `${process.env.REACT_APP_API_BASE_URL}/comment/add`,
         payload
       );
       resetForm();
       const response = await axios.get(
-        `https://editsh-back-anft.onrender.com/api/comment/${id}`
+        `${process.env.REACT_APP_API_BASE_URL}/comment/${id}`
       );
       setComments(response?.data?.data);
     } catch (err) {
@@ -89,7 +88,7 @@ function BlogsDetails() {
 
   return (
     <>
-      <Pagetitle
+      <PageTitle
         title="Blogs"
         description="We are Surat-based IT Solution Providers committed to providing the best services for the growth of our valuable clients and their varied businesses."
       />
@@ -118,7 +117,7 @@ function BlogsDetails() {
                   variant="h5"
                   sx={{
                     mb: 2,
-                    color: theme.palette.lightwhite,
+                    color: theme.palette.lightWhite,
                     fontWeight: 700,
                     fontSize: "20px",
                   }}
@@ -224,7 +223,7 @@ function BlogsDetails() {
                       component="span"
                       sx={{
                         ml: 2,
-                        border: `1px dotted ${theme.palette.lightwhite}`,
+                        border: `1px dotted ${theme.palette.lightWhite}`,
                         p: "5px 10px",
                         borderRadius: "50px",
                       }}

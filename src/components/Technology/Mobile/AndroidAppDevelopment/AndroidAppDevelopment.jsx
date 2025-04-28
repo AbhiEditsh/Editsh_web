@@ -1,31 +1,31 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import Pagetitle from "../../../../global/Pagetitle";
+import PageTitle from "../../../../global/PageTitle";
 import { useTheme } from "@emotion/react";
 import { Link } from "react-router-dom";
 import TimelineIcon from "@mui/icons-material/Timeline";
-import whychooseus from "../../../../assets/Technoogy/Mobile/iosDevelopment/iosservice/wcu.webp";
-import { Titleanimation } from "../../../../global/Titleanimation";
-import icon1 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidServices/icon1.png";
-import icon2 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidServices/icon2.png";
-import icon3 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidServices/icon3.png";
-import icon4 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidServices/icon4.png";
-import icon5 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidServices/icon5.webp";
-import icon6 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidServices/icon6.png";
-import icon7 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidServices/icon7.png";
-import icon8 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidServices/icon8.png";
-import icon9 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidServices/icon9.png";
-import icon10 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidServices/icon10.png";
+import whychooseus from "../../../../assets/Technology/Mobile/iosDevelopment/iosservice/wcu.webp";
+import { TitleAnimation } from "../../../../global/TitleAnimation";
+import icon1 from "../../../../assets/Technology/Mobile/androidDevelopment/androidServices/icon1.png";
+import icon2 from "../../../../assets/Technology/Mobile/androidDevelopment/androidServices/icon2.png";
+import icon3 from "../../../../assets/Technology/Mobile/androidDevelopment/androidServices/icon3.png";
+import icon4 from "../../../../assets/Technology/Mobile/androidDevelopment/androidServices/icon4.png";
+import icon5 from "../../../../assets/Technology/Mobile/androidDevelopment/androidServices/icon5.webp";
+import icon6 from "../../../../assets/Technology/Mobile/androidDevelopment/androidServices/icon6.png";
+import icon7 from "../../../../assets/Technology/Mobile/androidDevelopment/androidServices/icon7.png";
+import icon8 from "../../../../assets/Technology/Mobile/androidDevelopment/androidServices/icon8.png";
+import icon9 from "../../../../assets/Technology/Mobile/androidDevelopment/androidServices/icon9.png";
+import icon10 from "../../../../assets/Technology/Mobile/androidDevelopment/androidServices/icon10.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import tech1 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidTechnology/tech1.png";
-import tech2 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidTechnology/tech2.png";
-import tech3 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidTechnology/tech3.png";
-import tech4 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidTechnology/tech4.png";
-import tech5 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidTechnology/tech5.png";
-import tech6 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidTechnology/tech6.png";
-import tech7 from "../../../../assets/Technoogy/Mobile/androidDevelopment/androidTechnology/tech7.png";
+import tech1 from "../../../../assets/Technology/Mobile/androidDevelopment/androidTechnology/tech1.png";
+import tech2 from "../../../../assets/Technology/Mobile/androidDevelopment/androidTechnology/tech2.png";
+import tech3 from "../../../../assets/Technology/Mobile/androidDevelopment/androidTechnology/tech3.png";
+import tech4 from "../../../../assets/Technology/Mobile/androidDevelopment/androidTechnology/tech4.png";
+import tech5 from "../../../../assets/Technology/Mobile/androidDevelopment/androidTechnology/tech5.png";
+import tech6 from "../../../../assets/Technology/Mobile/androidDevelopment/androidTechnology/tech6.png";
+import tech7 from "../../../../assets/Technology/Mobile/androidDevelopment/androidTechnology/tech7.png";
 import RequestQuote from "../../../../global/RequestQuote";
 import ProjectIndustry from "../../../../global/ProjectIndustry";
 import RIghtBtn from "../../../../global/Button/RIghtBtn";
@@ -146,7 +146,7 @@ function AndroidAppDevelopment() {
   return (
     <>
       <SEO title="Editsh - Top Android App development Company" />
-      <Pagetitle title="IOS App Development" />
+      <PageTitle title="Android Apps Development" />
       <Box
         sx={{
           py: {
@@ -385,7 +385,7 @@ function AndroidAppDevelopment() {
           },
         }}
       >
-        <Titleanimation title={`Our Android Mobile App Development Services`} />
+        <TitleAnimation title={`Our Android Mobile App Development Services`} />
 
         <Container>
           <Typography
@@ -490,7 +490,7 @@ function AndroidAppDevelopment() {
           },
         }}
       >
-        <Titleanimation title={`Technologies Our iPhone App Developers Use`} />
+        <TitleAnimation title={`Technologies Our iPhone App Developers Use`} />
         <Container>
           <Typography
             sx={{

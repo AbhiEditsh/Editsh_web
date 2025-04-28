@@ -12,7 +12,7 @@ import { Link as RouterLink } from "react-router-dom";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import HomeIcon from "@mui/icons-material/Home";
 
-function Pagetitle({ title, description ,Link}) {
+function PageTitle({ title, description ,Link}) {
   const theme = useTheme();
 
   return (
@@ -126,4 +126,4 @@ function Pagetitle({ title, description ,Link}) {
   );
 }
 
-export default Pagetitle;
+export default PageTitle;

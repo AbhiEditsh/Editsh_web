@@ -8,35 +8,35 @@ import Grid from "@mui/material/Grid";
 import { useTheme } from "@emotion/react";
 
 // Framework
-import frame1 from "../../../../assets/Technoogy/front/vue js/technology/framwwork/vuetify-icon.png";
-import frame2 from "../../../../assets/Technoogy/front/vue js/technology/framwwork/quasar-icon.png";
-import frame3 from "../../../../assets/Technoogy/front/vue js/technology/framwwork/bootstrap-vue-icon.png";
-import frame4 from "../../../../assets/Technoogy/front/vue js/technology/framwwork/electron-icon.png";
-import frame5 from "../../../../assets/Technoogy/front/vue js/technology/framwwork/next-js-icon.png";
-import frame6 from "../../../../assets/Technoogy/front/vue js/technology/framwwork/vue-storefront-icon.png";
+import frame1 from "../../../../assets/Technology/front/vue js/technology/framwwork/vuetify-icon.png";
+import frame2 from "../../../../assets/Technology/front/vue js/technology/framwwork/quasar-icon.png";
+import frame3 from "../../../../assets/Technology/front/vue js/technology/framwwork/bootstrap-vue-icon.png";
+import frame4 from "../../../../assets/Technology/front/vue js/technology/framwwork/electron-icon.png";
+import frame5 from "../../../../assets/Technology/front/vue js/technology/framwwork/next-js-icon.png";
+import frame6 from "../../../../assets/Technology/front/vue js/technology/framwwork/vue-storefront-icon.png";
 
 //Tools
-import tools1 from "../../../../assets/Technoogy/front/vue js/technology/tools/adobe-xd-icon.png";
-import tools2 from "../../../../assets/Technoogy/front/vue js/technology/tools/figma-icon.png";
-import tools3 from "../../../../assets/Technoogy/front/vue js/technology/tools/Invision-icon.png";
-import tools4 from "../../../../assets/Technoogy/front/vue js/technology/tools/sketch.webp";
-import tools5 from "../../../../assets/Technoogy/front/vue js/technology/tools/zepline-icon.png";
+import tools1 from "../../../../assets/Technology/front/vue js/technology/tools/adobe-xd-icon.png";
+import tools2 from "../../../../assets/Technology/front/vue js/technology/tools/figma-icon.png";
+import tools3 from "../../../../assets/Technology/front/vue js/technology/tools/Invision-icon.png";
+import tools4 from "../../../../assets/Technology/front/vue js/technology/tools/sketch.webp";
+import tools5 from "../../../../assets/Technology/front/vue js/technology/tools/zepline-icon.png";
 
-import data1 from "../../../../assets/Technoogy/front/vue js/technology/database/vux-icon.png";
-import data2 from "../../../../assets/Technoogy/front/vue js/technology/database/iview-icon.png";
-import data3 from "../../../../assets/Technoogy/front/vue js/technology/database/element-ui-icon.png";
-import data4 from "../../../../assets/Technoogy/front/vue js/technology/database/vue-tailwind-icon.png";
-import data5 from "../../../../assets/Technoogy/front/vue js/technology/database/vuex-icon.png";
-import data6 from "../../../../assets/Technoogy/front/vue js/technology/database/socket-icon.png";
+import data1 from "../../../../assets/Technology/front/vue js/technology/database/vux-icon.png";
+import data2 from "../../../../assets/Technology/front/vue js/technology/database/iview-icon.png";
+import data3 from "../../../../assets/Technology/front/vue js/technology/database/element-ui-icon.png";
+import data4 from "../../../../assets/Technology/front/vue js/technology/database/vue-tailwind-icon.png";
+import data5 from "../../../../assets/Technology/front/vue js/technology/database/vuex-icon.png";
+import data6 from "../../../../assets/Technology/front/vue js/technology/database/socket-icon.png";
 
-import p1 from "../../../../assets/Technoogy/front/vue js/technology/platforms/aws-icon.png";
-import p2 from "../../../../assets/Technoogy/front/vue js/technology/platforms/firebase-icon.png";
-import p3 from "../../../../assets/Technoogy/front/vue js/technology/platforms/docker-icon.png";
-import p4 from "../../../../assets/Technoogy/front/vue js/technology/platforms/heroku-icon.png";
-import p5 from "../../../../assets/Technoogy/front/vue js/technology/platforms/azure-icon.png";
-import p6 from "../../../../assets/Technoogy/front/vue js/technology/platforms/digital-ocean.png";
-import p7 from "../../../../assets/Technoogy/front/vue js/technology/platforms/kubernetes.png";
-import p8 from "../../../../assets/Technoogy/front/vue js/technology/platforms/cloud-front.png";
+import p1 from "../../../../assets/Technology/front/vue js/technology/platforms/aws-icon.png";
+import p2 from "../../../../assets/Technology/front/vue js/technology/platforms/firebase-icon.png";
+import p3 from "../../../../assets/Technology/front/vue js/technology/platforms/docker-icon.png";
+import p4 from "../../../../assets/Technology/front/vue js/technology/platforms/heroku-icon.png";
+import p5 from "../../../../assets/Technology/front/vue js/technology/platforms/azure-icon.png";
+import p6 from "../../../../assets/Technology/front/vue js/technology/platforms/digital-ocean.png";
+import p7 from "../../../../assets/Technology/front/vue js/technology/platforms/kubernetes.png";
+import p8 from "../../../../assets/Technology/front/vue js/technology/platforms/cloud-front.png";
 
 function VuuejsPanel(props) {
   const { children, value, index, ...other } = props;

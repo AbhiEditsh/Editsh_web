@@ -1,21 +1,21 @@
 import React from "react";
-import Pagetitle from "../../../../global/Pagetitle";
+import PageTitle from "../../../../global/PageTitle";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import { Link } from "react-router-dom";
-import s1 from "../../../../assets/Technoogy/Backend/Nodejs/services/s1.png";
-import s2 from "../../../../assets/Technoogy/Backend/Nodejs/services/s2.png";
-import s3 from "../../../../assets/Technoogy/Backend/Nodejs/services/s3.png";
-import s4 from "../../../../assets/Technoogy/Backend/Nodejs/services/s4.png";
-import s5 from "../../../../assets/Technoogy/Backend/Nodejs/services/s5.png";
-import s6 from "../../../../assets/Technoogy/Backend/Nodejs/services/s6.png";
-import s7 from "../../../../assets/Technoogy/Backend/Nodejs/services/s7.png";
-import s8 from "../../../../assets/Technoogy/Backend/Nodejs/services/s8.png";
-import s9 from "../../../../assets/Technoogy/Backend/Nodejs/services/s9.png";
+import s1 from "../../../../assets/Technology/Backend/Nodejs/services/s1.png";
+import s2 from "../../../../assets/Technology/Backend/Nodejs/services/s2.png";
+import s3 from "../../../../assets/Technology/Backend/Nodejs/services/s3.png";
+import s4 from "../../../../assets/Technology/Backend/Nodejs/services/s4.png";
+import s5 from "../../../../assets/Technology/Backend/Nodejs/services/s5.png";
+import s6 from "../../../../assets/Technology/Backend/Nodejs/services/s6.png";
+import s7 from "../../../../assets/Technology/Backend/Nodejs/services/s7.png";
+import s8 from "../../../../assets/Technology/Backend/Nodejs/services/s8.png";
+import s9 from "../../../../assets/Technology/Backend/Nodejs/services/s9.png";
 import ProjectPricing from "../../../../global/ProjectPricing";
-import { Titleanimation } from "../../../../global/Titleanimation";
+import { TitleAnimation } from "../../../../global/TitleAnimation";
 import NodejsPanel from "./NodejsPanel";
-import TrutedProject from "../../../../global/TrutedProject";
+import TrustedProject from "../../../../global/TrustedProject";
 import ProjectIndustry from "../../../../global/ProjectIndustry";
 import RequestQuote from "../../../../global/RequestQuote";
 import RIghtBtn from "../../../../global/Button/RIghtBtn";
@@ -150,7 +150,7 @@ function NodejsDevelopment() {
   return (
     <>
       <SEO title="Editsh -Top Node js development Company" />
-      <Pagetitle title="Node Js development" />
+      <PageTitle title="Node Js development" />
 
       <Box
         sx={{
@@ -399,7 +399,7 @@ function NodejsDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Discover Our Cutting-Edge Node.js Development Service" />
+          <TitleAnimation title="Discover Our Cutting-Edge Node.js Development Service" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -509,7 +509,7 @@ function NodejsDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Hire Our Talented Angularjs Developer As Per Your Project Needs" />
+          <TitleAnimation title="Hire Our Talented Angularjs Developer As Per Your Project Needs" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -677,7 +677,7 @@ function NodejsDevelopment() {
           },
         }}
       >
-        <Titleanimation
+        <TitleAnimation
           title={`Benefits of Node.js Development Service That Fosters Cost Savings`}
         />
         <Container>
@@ -767,7 +767,7 @@ function NodejsDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title={`Technologies That We Work With`} />
+          <TitleAnimation title={`Technologies That We Work With`} />
           <Typography
             sx={{
               fontSize: "14px",
@@ -796,7 +796,7 @@ function NodejsDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Why Editsh is Your Trusted Node.js Development Service Provider?" />
+          <TitleAnimation title="Why Editsh is Your Trusted Node.js Development Service Provider?" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -811,7 +811,7 @@ function NodejsDevelopment() {
             create the safest and reliable web applications that meets all the
             standards.Here are some reasons why clients choose us:
           </Typography>
-          <TrutedProject />
+          <TrustedProject />
         </Container>
       </Box>
       <ProjectIndustry />

@@ -4,23 +4,22 @@ import { Container, Typography, Card, Avatar, Box } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Titleanimation } from "../../global/Titleanimation";
+import { TitleAnimation } from "../../global/TitleAnimation";
 import { useTheme } from "@mui/material/styles";
 import StarIcon from "@mui/icons-material/Star";
 import StarHalfIcon from "@mui/icons-material/StarHalf";
 import StarOutlineIcon from "@mui/icons-material/StarOutline";
 import axios from "axios";
 
-const ClientsTestimonil = () => {
+const ClientsTestimonial = () => {
   const theme = useTheme();
-  const [testimonial, settestimonial] = useState([]);
+  const [testimonial, setTestimonial] = useState([]);
   const fetchExperiences = async () => {
     try {
       const response = await axios.get(
-        "https://editsh-back-anft.onrender.com/api/testimonial/view"
+        `${process.env.REACT_APP_API_BASE_URL}/testimonial/view`
       );
-      console.log(response);
-      settestimonial(response?.data?.data);
+      setTestimonial(response?.data?.data);
     } catch (err) {
       console.error(err);
     }
@@ -61,7 +60,6 @@ const ClientsTestimonil = () => {
             sx={{
               fontSize: "16px",
               color: theme.palette.warning.main,
-
             }}
           />
         ))}
@@ -86,7 +84,7 @@ const ClientsTestimonil = () => {
           height: "35px",
           padding: "8px",
           borderRadius: "4px",
-          backgroundColor: theme.palette.lightwhite,
+          backgroundColor: theme.palette.lightWhite,
           color: theme.palette.white,
           boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
         }}
@@ -112,7 +110,7 @@ const ClientsTestimonil = () => {
           borderRadius: "4px",
           height: "35px",
           padding: "8px",
-          backgroundColor: theme.palette.lightwhite,
+          backgroundColor: theme.palette.lightWhite,
           color: theme.palette.white,
           boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
         }}
@@ -154,7 +152,7 @@ const ClientsTestimonil = () => {
           padding: 4,
         }}
       >
-        <Titleanimation title="Client Testimonials" />
+        <TitleAnimation title="Client Testimonials" />
         <Box
           position="relative"
           sx={{
@@ -235,4 +233,4 @@ const ClientsTestimonil = () => {
   );
 };
 
-export default ClientsTestimonil;
+export default ClientsTestimonial;

@@ -1,66 +1,66 @@
 import React from "react";
-import AboutImage from "../../../../../src/assets/Technoogy/Mobile/FlutterAppDevelopment/AboutImage.png";
-import Pagetitle from "../../../../global/Pagetitle";
+import AboutImage from "../../../../../src/assets/Technology/Mobile/FlutterAppDevelopment/AboutImage.png";
+import PageTitle from "../../../../global/PageTitle";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useTheme } from "@emotion/react";
-import { Titleanimation } from "../../../../global/Titleanimation";
-import Ser1 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Flutterappservices/customappdevelopment.png";
-import Ser2 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Flutterappservices/fluterapptesting.png";
-import Ser3 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Flutterappservices/flutterappaudit.png";
-import Ser4 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Flutterappservices/flutterappmigration.png";
-import Ser5 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Flutterappservices/flutterappsecurity.png";
-import Ser6 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Flutterappservices/fluttersupportmaintance.png";
-import Ser7 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Flutterappservices/flutterupgradeservices.png";
-import Ser8 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Flutterappservices/fullterappconsulting.png";
-import Ser9 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Flutterappservices/fullterappdesign.png";
+import { TitleAnimation } from "../../../../global/TitleAnimation";
+import Ser1 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Flutterappservices/customappdevelopment.png";
+import Ser2 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Flutterappservices/fluterapptesting.png";
+import Ser3 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Flutterappservices/flutterappaudit.png";
+import Ser4 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Flutterappservices/flutterappmigration.png";
+import Ser5 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Flutterappservices/flutterappsecurity.png";
+import Ser6 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Flutterappservices/fluttersupportmaintance.png";
+import Ser7 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Flutterappservices/flutterupgradeservices.png";
+import Ser8 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Flutterappservices/fullterappconsulting.png";
+import Ser9 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Flutterappservices/fullterappdesign.png";
 // Frameworks
-import Frame1 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/framework/flutter-sdk.webp";
-import Frame2 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/framework/dart-icon.png";
+import Frame1 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/framework/flutter-sdk.webp";
+import Frame2 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/framework/dart-icon.png";
 // Tools
-import Tools1 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Tools/android-studio-icon.png";
-import Tools2 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Tools/vs-code-icon.png";
-import Tools3 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Tools/intellij-idea.webp";
-import Tools4 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Tools/gitlab.svg";
-import Tools5 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Tools/gitlab (1).svg";
-import Tools6 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Tools/github-icon.png";
+import Tools1 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Tools/android-studio-icon.png";
+import Tools2 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Tools/vs-code-icon.png";
+import Tools3 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Tools/intellij-idea.webp";
+import Tools4 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Tools/gitlab.svg";
+import Tools5 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Tools/gitlab (1).svg";
+import Tools6 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Tools/github-icon.png";
 //DataBases
-import Database1 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/databases/hive.webp";
-import Database2 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/databases/objectbox-icon.png";
-import Database3 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/databases/sqlite-icon.png";
-import Database4 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/databases/firebase-icon.png";
-import Database5 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/databases/firestore-icon.png";
-import Database6 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/databases/drift.webp";
+import Database1 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/databases/hive.webp";
+import Database2 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/databases/objectbox-icon.png";
+import Database3 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/databases/sqlite-icon.png";
+import Database4 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/databases/firebase-icon.png";
+import Database5 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/databases/firestore-icon.png";
+import Database6 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/databases/drift.webp";
 
 //Platforms
-import Platform1 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/platforms/hive.webp";
-import Platform2 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/platforms/ios.svg";
+import Platform1 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/platforms/hive.webp";
+import Platform2 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/platforms/ios.svg";
 //Unit Testing
-import Unit1 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/unittesting/bitrise.svg";
-import Unit2 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/unittesting/cirrus.svg";
-import Unit3 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/unittesting/codemagic.svg";
-import Unit4 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/unittesting/fastlane.svg";
-import Unit5 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/unittesting/travis-CI.png";
+import Unit1 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/unittesting/bitrise.svg";
+import Unit2 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/unittesting/cirrus.svg";
+import Unit3 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/unittesting/codemagic.svg";
+import Unit4 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/unittesting/fastlane.svg";
+import Unit5 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/unittesting/travis-CI.png";
 //Ai Tools
-import Ai2 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/AiTools/chatgpt.svg";
-import Ai1 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/AiTools/github-co-pilot.svg";
+import Ai2 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/AiTools/chatgpt.svg";
+import Ai1 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/AiTools/github-co-pilot.svg";
 //Plugins
-import Plugins1 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Plugin/firebase-icon.png";
-import Plugins2 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Plugin/payment-gateway-icon.svg";
-import Plugins3 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Plugin/aws-img.png";
-import Plugins4 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Plugin/aws-amplify.svg";
-import Plugins5 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Plugin/bloc.svg";
-import Plugins6 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/Plugin/map-flutter_ffmpeg.svg";
+import Plugins1 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Plugin/firebase-icon.png";
+import Plugins2 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Plugin/payment-gateway-icon.svg";
+import Plugins3 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Plugin/aws-img.png";
+import Plugins4 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Plugin/aws-amplify.svg";
+import Plugins5 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Plugin/bloc.svg";
+import Plugins6 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/Plugin/map-flutter_ffmpeg.svg";
 //Flutter Project system
-import FP1 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/FlutterProject/dedicatedteam.png";
-import FP2 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/FlutterProject/100stisfaction.png";
-import FP3 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/FlutterProject/freetrial.png";
-import FP4 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/FlutterProject/nohiddencost.png";
-import FP5 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/FlutterProject/Agreement.png";
-import FP6 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/FlutterProject/easypolicy.png";
-import FP7 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/FlutterProject/onetimeproject.png";
-import FP8 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/FlutterProject/timezone.png";
-import FP9 from "../../../../assets/Technoogy/Mobile/FlutterAppDevelopment/FlutterProject/documentation.png";
+import FP1 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/FlutterProject/dedicatedteam.png";
+import FP2 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/FlutterProject/100stisfaction.png";
+import FP3 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/FlutterProject/freetrial.png";
+import FP4 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/FlutterProject/nohiddencost.png";
+import FP5 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/FlutterProject/Agreement.png";
+import FP6 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/FlutterProject/easypolicy.png";
+import FP7 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/FlutterProject/onetimeproject.png";
+import FP8 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/FlutterProject/timezone.png";
+import FP9 from "../../../../assets/Technology/Mobile/FlutterAppDevelopment/FlutterProject/documentation.png";
 //Industry We Serve
 import RequestQuote from "../../../../global/RequestQuote";
 import ProjectIndustry from "../../../../global/ProjectIndustry";
@@ -348,7 +348,7 @@ function FlutterAppDevelopment() {
   return (
     <>
       <SEO title="Editsh - Top Flutter App development Company" />
-      <Pagetitle title="Flutter App Development" />
+      <PageTitle title="Flutter App Development" />
       <Box
         sx={{
           py: {
@@ -451,7 +451,7 @@ function FlutterAppDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Flutter App Development Service" />
+          <TitleAnimation title="Flutter App Development Service" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -557,7 +557,7 @@ function FlutterAppDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Tools and Technologies Stack We Use for Flutter App Development" />
+          <TitleAnimation title="Tools and Technologies Stack We Use for Flutter App Development" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -606,7 +606,7 @@ function FlutterAppDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Why Should You Choose Editsh for Your Flutter App Development Project?" />
+          <TitleAnimation title="Why Should You Choose Editsh for Your Flutter App Development Project?" />
           <Typography
             sx={{
               fontSize: "14px",

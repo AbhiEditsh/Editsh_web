@@ -18,7 +18,7 @@ function splitText(text) {
   ));
 }
 
-function Heroslider() {
+function HeroSlider() {
   const theme = useTheme();
 
   return (
@@ -135,4 +135,4 @@ function Heroslider() {
   );
 }
 
-export default Heroslider;
+export default HeroSlider;

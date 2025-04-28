@@ -16,11 +16,10 @@ root.render(
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BlogProvider>
-      <App />
+        <App />
       </BlogProvider>
     </ThemeProvider>
   </BrowserRouter>
 );
-
 
 reportWebVitals();

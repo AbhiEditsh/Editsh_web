@@ -29,7 +29,7 @@ function UploadCvForm() {
   const fetchTechnology = async () => {
     try {
       const response = await axios.get(
-        "https://editsh-back-anft.onrender.com/api/technology/view"
+        `${process.env.REACT_APP_API_BASE_URL}/technology/view`
       );
 
       setTechnology(response?.data?.data);
@@ -52,13 +52,9 @@ function UploadCvForm() {
       formData.append("image", file);
 
       axios
-        .post(
-          "https://editsh-back-anft.onrender.com/api/upload-image",
-          formData,
-          {
-            headers: { "Content-Type": "multipart/form-data" },
-          }
-        )
+        .post(`${process.env.REACT_APP_API_BASE_URL}/upload-image`, formData, {
+          headers: { "Content-Type": "multipart/form-data" },
+        })
         .then((response) => {
           setImage({
             url: response.data.url,
@@ -79,7 +75,7 @@ function UploadCvForm() {
     };
     try {
       const response = await axios.post(
-        "https://editsh-back-anft.onrender.com/api/resume/add",
+        `${process.env.REACT_APP_API_BASE_URL}/resume/add`,
         formData
       );
       if (response.status === 201) {
@@ -160,6 +156,13 @@ function UploadCvForm() {
                       error={touched.firstName && Boolean(errors.firstName)}
                       helperText={touched.firstName && errors.firstName}
                       fullWidth
+                      InputLabelProps={{
+                        style: { color: theme.palette.black },
+                        shrink: true,
+                      }}
+                      InputProps={{
+                        style: { color: theme.palette.black },
+                      }}
                     />
                   </Grid>
                   <Grid item xs={12} sm={6}>
@@ -172,6 +175,13 @@ function UploadCvForm() {
                       error={touched.lastName && Boolean(errors.lastName)}
                       helperText={touched.lastName && errors.lastName}
                       fullWidth
+                      InputLabelProps={{
+                        style: { color: theme.palette.black },
+                        shrink: true,
+                      }}
+                      InputProps={{
+                        style: { color: theme.palette.black },
+                      }}
                     />
                   </Grid>
                   <Grid item xs={12} sm={6}>
@@ -184,6 +194,13 @@ function UploadCvForm() {
                       error={touched.email && Boolean(errors.email)}
                       helperText={touched.email && errors.email}
                       fullWidth
+                      InputLabelProps={{
+                        style: { color: theme.palette.black },
+                        shrink: true,
+                      }}
+                      InputProps={{
+                        style: { color: theme.palette.black },
+                      }}
                     />
                   </Grid>
                   <Grid item xs={12} sm={6}>
@@ -196,6 +213,13 @@ function UploadCvForm() {
                       error={touched.mobile && Boolean(errors.mobile)}
                       helperText={touched.mobile && errors.mobile}
                       fullWidth
+                      InputLabelProps={{
+                        style: { color: theme.palette.black },
+                        shrink: true,
+                      }}
+                      InputProps={{
+                        style: { color: theme.palette.black },
+                      }}
                     />
                   </Grid>
                   <Grid item xs={12} sm={12}>
@@ -210,6 +234,13 @@ function UploadCvForm() {
                       fullWidth
                       multiline
                       rows={4}
+                      InputLabelProps={{
+                        style: { color: theme.palette.black },
+                        shrink: true,
+                      }}
+                      InputProps={{
+                        style: { color: theme.palette.black },
+                      }}
                     />
                   </Grid>
 
@@ -228,6 +259,13 @@ function UploadCvForm() {
                         touched.currentCompanyName && errors.currentCompanyName
                       }
                       fullWidth
+                      InputLabelProps={{
+                        style: { color: theme.palette.black },
+                        shrink: true,
+                      }}
+                      InputProps={{
+                        style: { color: theme.palette.black },
+                      }}
                     />
                   </Grid>
                   <Grid item xs={12} sm={12}>
@@ -242,7 +280,17 @@ function UploadCvForm() {
                         onChange={handleChange}
                       >
                         {technology?.map((tech) => (
-                          <MenuItem key={tech._id} value={tech.LanguagesName}>
+                          <MenuItem
+                            key={tech._id}
+                            value={tech.LanguagesName}
+                            InputLabelProps={{
+                              style: { color: theme.palette.black },
+                              shrink: true,
+                            }}
+                            InputProps={{
+                              style: { color: theme.palette.black },
+                            }}
+                          >
                             {tech.LanguagesName}
                           </MenuItem>
                         ))}
@@ -260,6 +308,13 @@ function UploadCvForm() {
                       error={touched.year && Boolean(errors.year)}
                       helperText={touched.year && errors.year}
                       fullWidth
+                      InputLabelProps={{
+                        style: { color: theme.palette.black },
+                        shrink: true,
+                      }}
+                      InputProps={{
+                        style: { color: theme.palette.black },
+                      }}
                     >
                       {years.map((year) => (
                         <MenuItem key={year} value={year}>
@@ -280,9 +335,11 @@ function UploadCvForm() {
                       helperText={touched.month && errors.month}
                       fullWidth
                       InputLabelProps={{
-                        style: {
-                          color: theme.palette.black,
-                        },
+                        style: { color: theme.palette.black },
+                        shrink: true,
+                      }}
+                      InputProps={{
+                        style: { color: theme.palette.black },
                       }}
                     >
                       {months.map((month) => (
@@ -303,6 +360,13 @@ function UploadCvForm() {
                       }
                       helperText={touched.currentSalary && errors.currentSalary}
                       fullWidth
+                      InputLabelProps={{
+                        style: { color: theme.palette.black },
+                        shrink: true,
+                      }}
+                      InputProps={{
+                        style: { color: theme.palette.black },
+                      }}
                     />
                   </Grid>
                   <Grid item xs={12} sm={6}>
@@ -318,6 +382,13 @@ function UploadCvForm() {
                         touched.expectedSalary && errors.expectedSalary
                       }
                       fullWidth
+                      InputLabelProps={{
+                        style: { color: theme.palette.black },
+                        shrink: true,
+                      }}
+                      InputProps={{
+                        style: { color: theme.palette.black },
+                      }}
                     />
                   </Grid>
                   <Grid item xs={12}>
@@ -392,7 +463,7 @@ function UploadCvForm() {
                     sx={{
                       width: "150px",
                       borderRadius: 5,
-                      border: `1px dotted ${theme.palette.lightwhite}`,
+                      border: `1px dotted ${theme.palette.lightWhite}`,
                       color: theme.palette.grey[500],
                       "&:hover": {
                         backgroundColor: theme.palette.secondary.main,

@@ -1,11 +1,11 @@
 import { Container, Box, Typography } from "@mui/material";
-import Pagetitle from "../../global/Pagetitle";
+import PageTitle from "../../global/PageTitle";
 import { Link } from "react-router-dom";
 
 function Term() {
   return (
     <>
-      <Pagetitle
+      <PageTitle
         title={`Terms & Conditions`}
         description={`
           We are Surat-based IT Solution Providers committed to providing the best services for the growth of our valuable clients and their varied businesses.`}

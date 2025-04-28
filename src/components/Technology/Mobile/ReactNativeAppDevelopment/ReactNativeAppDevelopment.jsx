@@ -1,19 +1,19 @@
 import React from "react";
-import AboutImage from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/AboutImage.png";
+import AboutImage from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/AboutImage.png";
 import { Link } from "react-router-dom";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
-import Pagetitle from "../../../../global/Pagetitle";
-import whychooseus from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/whychooseus.png";
-import { Titleanimation } from "../../../../global/Titleanimation";
-import react from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Crossplatform/react-js.png";
-import typescripticon from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Crossplatform/typescript-icon.png";
-import reduxicon from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Crossplatform/redux-icon.png";
-import mongodbicon from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Crossplatform/mongo-db-icon.png";
-import firebaseicon from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Crossplatform/firebase-icon.png";
-import expoicon from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Crossplatform/expo-icon.png";
+import PageTitle from "../../../../global/PageTitle";
+import whychooseus from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/whychooseus.png";
+import { TitleAnimation } from "../../../../global/TitleAnimation";
+import react from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Crossplatform/react-js.png";
+import typescripticon from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Crossplatform/typescript-icon.png";
+import reduxicon from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Crossplatform/redux-icon.png";
+import mongodbicon from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Crossplatform/mongo-db-icon.png";
+import firebaseicon from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Crossplatform/firebase-icon.png";
+import expoicon from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Crossplatform/expo-icon.png";
 import AddIcon from "@mui/icons-material/Add";
-import GraphQL from "../../../../assets/Technoogy/Mobile/Raectnativeappdevelopment/Crossplatform/graph-ql-icon.png";
+import GraphQL from "../../../../assets/Technology/Mobile/Raectnativeappdevelopment/Crossplatform/graph-ql-icon.png";
 import ReactNativePanel from "./ReactNativPanel";
 import RequestQuote from "../../../../global/RequestQuote";
 import ProjectIndustry from "../../../../global/ProjectIndustry";
@@ -107,7 +107,7 @@ function ReactNativeAppDevelopment() {
   return (
     <>
       <SEO title="Editsh - Top React Native development Company" />
-      <Pagetitle title="React Native Development" />
+      <PageTitle title="React Native Development" />
       <Box
         sx={{
           py: {
@@ -316,7 +316,7 @@ function ReactNativeAppDevelopment() {
           },
         }}
       >
-        <Titleanimation title={`Our React Native development services`} />
+        <TitleAnimation title={`Our React Native development services`} />
         <Container>
           <Typography
             sx={{
@@ -396,7 +396,7 @@ function ReactNativeAppDevelopment() {
           },
         }}
       >
-        <Titleanimation
+        <TitleAnimation
           title={`Cross-Platform Combinations with React Native`}
         />
         <Container>
@@ -510,7 +510,7 @@ function ReactNativeAppDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title={`Cross-Platform with React Native`} />
+          <TitleAnimation title={`Cross-Platform with React Native`} />
           <ReactNativePanel />
         </Container>
       </Box>

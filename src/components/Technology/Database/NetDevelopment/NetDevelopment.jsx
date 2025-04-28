@@ -1,24 +1,24 @@
 import React from "react";
-import Pagetitle from "../../../../global/Pagetitle";
+import PageTitle from "../../../../global/PageTitle";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useTheme } from "@emotion/react";
-import s1 from "../../../../assets/Technoogy/Backend/net/services/s1.png";
-import s2 from "../../../../assets/Technoogy/Backend/net/services/s2.png";
-import s3 from "../../../../assets/Technoogy/Backend/net/services/s3.png";
-import s4 from "../../../../assets/Technoogy/Backend/net/services/s4.png";
-import s5 from "../../../../assets/Technoogy/Backend/net/services/s5.png";
-import s6 from "../../../../assets/Technoogy/Backend/net/services/s6.png";
-import s7 from "../../../../assets/Technoogy/Backend/net/services/s7.png";
-import s8 from "../../../../assets/Technoogy/Backend/net/services/s8.png";
-import s9 from "../../../../assets/Technoogy/Backend/net/services/s9.png";
-import { Titleanimation } from "../../../../global/Titleanimation";
-import p1 from "../../../../assets/Technoogy/Backend/net/project/p1.png";
-import p2 from "../../../../assets/Technoogy/Backend/net/project/p2.png";
-import p3 from "../../../../assets/Technoogy/Backend/net/project/p3.png";
-import p4 from "../../../../assets/Technoogy/Backend/net/project/p4.png";
-import p5 from "../../../../assets/Technoogy/Backend/net/project/p5.png";
-import p6 from "../../../../assets/Technoogy/Backend/net/project/p6.png";
+import s1 from "../../../../assets/Technology/Backend/net/services/s1.png";
+import s2 from "../../../../assets/Technology/Backend/net/services/s2.png";
+import s3 from "../../../../assets/Technology/Backend/net/services/s3.png";
+import s4 from "../../../../assets/Technology/Backend/net/services/s4.png";
+import s5 from "../../../../assets/Technology/Backend/net/services/s5.png";
+import s6 from "../../../../assets/Technology/Backend/net/services/s6.png";
+import s7 from "../../../../assets/Technology/Backend/net/services/s7.png";
+import s8 from "../../../../assets/Technology/Backend/net/services/s8.png";
+import s9 from "../../../../assets/Technology/Backend/net/services/s9.png";
+import { TitleAnimation } from "../../../../global/TitleAnimation";
+import p1 from "../../../../assets/Technology/Backend/net/project/p1.png";
+import p2 from "../../../../assets/Technology/Backend/net/project/p2.png";
+import p3 from "../../../../assets/Technology/Backend/net/project/p3.png";
+import p4 from "../../../../assets/Technology/Backend/net/project/p4.png";
+import p5 from "../../../../assets/Technology/Backend/net/project/p5.png";
+import p6 from "../../../../assets/Technology/Backend/net/project/p6.png";
 import ProjectIndustry from "../../../../global/ProjectIndustry";
 import RequestQuote from "../../../../global/RequestQuote";
 import NetDevelopPanel from "./NetDevelopPanel";
@@ -151,7 +151,7 @@ function NetDevelopment() {
     <>
       <SEO title="Editsh -Top .Net Development Company" />
 
-      <Pagetitle title=".Net  Development" />
+      <PageTitle title=".Net  Development" />
       <Box
         sx={{
           py: {
@@ -347,7 +347,7 @@ function NetDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Our .NET Development Services" />
+          <TitleAnimation title="Our .NET Development Services" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -585,7 +585,7 @@ function NetDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title={`Our Technologies`} />
+          <TitleAnimation title={`Our Technologies`} />
           <NetDevelopPanel />
         </Container>
       </Box>
@@ -599,7 +599,7 @@ function NetDevelopment() {
           },
         }}
       >
-        <Titleanimation
+        <TitleAnimation
           title={`Why Choose Editsh For Your .NET Development Project?`}
         />
         <Container>

@@ -1,10 +1,10 @@
 import { Box, Container, Divider, Typography } from "@mui/material";
-import Pagetitle from "../../global/Pagetitle";
+import PageTitle from "../../global/PageTitle";
 
 function Policy() {
   return (
     <>
-      <Pagetitle
+      <PageTitle
         title={`Policy`}
         description={`
           We are Surat-based IT Solution Providers committed to providing the best services for the growth of our valuable clients and their varied businesses.`}

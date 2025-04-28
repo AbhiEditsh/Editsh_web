@@ -23,11 +23,10 @@ import "react-toastify/dist/ReactToastify.css";
 import "../../src/assets/Css/contact.css";
 import axios from "axios";
 
-const Getintouch = () => {
+const GetInTouch = () => {
   const theme = useTheme();
   // eslint-disable-next-line
   const [image, setImage] = useState(null);
-
   const validationSchema = Yup.object({
     fullName: Yup.string().required("Full Name is required"),
     email: Yup.string()
@@ -84,13 +83,9 @@ const Getintouch = () => {
       formData.append("image", file);
 
       axios
-        .post(
-          "https://editsh-back-anft.onrender.com/api/upload-image",
-          formData,
-          {
-            headers: { "Content-Type": "multipart/form-data" },
-          }
-        )
+        .post(`${process.env.REACT_APP_API_BASE_URL}/upload-image`, formData, {
+          headers: { "Content-Type": "multipart/form-data" },
+        })
         .then((response) => {
           setImage({
             url: response.data.url,
@@ -108,7 +103,7 @@ const Getintouch = () => {
   const handleSubmit = async (values, { resetForm, setSubmitting }) => {
     try {
       const response = await axios.post(
-        "https://editsh-back-anft.onrender.com/api/gettouch/add",
+        `${process.env.REACT_APP_API_BASE_URL}/gettouch/add`,
         values
       );
 
@@ -181,7 +176,7 @@ const Getintouch = () => {
                         height: "40px",
                         lineHeight: "40px",
                         textAlign: "center",
-                        backgroundColor: theme.palette.lightwhite,
+                        backgroundColor: theme.palette.lightWhite,
                         color: theme.palette.white,
                         borderRadius: "10%",
                         mr: 2,
@@ -465,4 +460,4 @@ const Getintouch = () => {
   );
 };
 
-export default Getintouch;
+export default GetInTouch;

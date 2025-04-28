@@ -1,19 +1,18 @@
 import React from "react";
-import Pagetitle from "../../../../global/Pagetitle";
+import PageTitle from "../../../../global/PageTitle";
 import { Box, Grid, Typography, Container } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import { Link } from "react-router-dom";
-// Anguljs development services
-import As1 from "../../../../assets/Technoogy/front/services/applicationdevelopment.png";
-import As2 from "../../../../assets/Technoogy/front/services/webapplication.png";
-import As3 from "../../../../assets/Technoogy/front/services/applicationdevelopment.png";
-import As4 from "../../../../assets/Technoogy/front/services/consultingservices.png";
-import As5 from "../../../../assets/Technoogy/front/services/apimigration.png";
-import As6 from "../../../../assets/Technoogy/front/services/upgradeservices.png";
-import As7 from "../../../../assets/Technoogy/front/services/uiuxsolution.png";
-import As8 from "../../../../assets/Technoogy/front/services/Supportand Maintenance.png";
-import As9 from "../../../../assets/Technoogy/front/services/QAandTesting.png";
-import { Titleanimation } from "../../../../global/Titleanimation";
+import As1 from "../../../../assets/Technology/front/services/applicationdevelopment.png";
+import As2 from "../../../../assets/Technology/front/services/webapplication.png";
+import As3 from "../../../../assets/Technology/front/services/applicationdevelopment.png";
+import As4 from "../../../../assets/Technology/front/services/consultingservices.png";
+import As5 from "../../../../assets/Technology/front/services/apimigration.png";
+import As6 from "../../../../assets/Technology/front/services/upgradeservices.png";
+import As7 from "../../../../assets/Technology/front/services/uiuxsolution.png";
+import As8 from "../../../../assets/Technology/front/services/Supportand Maintenance.png";
+import As9 from "../../../../assets/Technology/front/services/QAandTesting.png";
+import { TitleAnimation } from "../../../../global/TitleAnimation";
 import AngularPanel from "./AngularPanel";
 import ProjectIndustry from "../../../../global/ProjectIndustry";
 import RequestQuote from "../../../../global/RequestQuote";
@@ -111,7 +110,7 @@ function AngularJsDeveloment() {
   return (
     <>
       <SEO title="Editsh -Top Angular js Development Company" />
-      <Pagetitle title="Angular Js Development" />
+      <PageTitle title="Angular Js Development" />
       <Box
         sx={{
           py: {
@@ -157,7 +156,7 @@ function AngularJsDeveloment() {
                   my: 2,
                 }}
               >
-                Android Application Development Company
+                 AngularJs Development Company
               </Typography>
               <Typography
                 sx={{
@@ -318,7 +317,7 @@ function AngularJsDeveloment() {
         }}
       >
         <Container>
-          <Titleanimation title="Our AngularJS development services" />
+          <TitleAnimation title="Our AngularJS development services" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -429,7 +428,7 @@ function AngularJsDeveloment() {
         }}
       >
         <Container>
-          <Titleanimation title="Hire Our Talented Angularjs Developer As Per Your Project Needs" />
+          <TitleAnimation title="Hire Our Talented Angularjs Developer As Per Your Project Needs" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -470,7 +469,7 @@ function AngularJsDeveloment() {
           },
         }}
       >
-        <Titleanimation
+        <TitleAnimation
           title={`Benefits of Angularjs for Web Application Development`}
         />
         <Container>
@@ -560,7 +559,7 @@ function AngularJsDeveloment() {
         }}
       >
         <Container>
-          <Titleanimation
+          <TitleAnimation
             title={`Tools and Technologies Angularjs Development`}
           />
           <AngularPanel />

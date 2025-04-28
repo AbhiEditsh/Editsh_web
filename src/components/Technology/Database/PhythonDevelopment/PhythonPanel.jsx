@@ -6,35 +6,35 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
-import frame1 from "../../../../assets/Technoogy/Backend/phython/Framework/django-logo.png";
-import frame2 from "../../../../assets/Technoogy/Backend/phython/Framework/flask.svg";
-import frame3 from "../../../../assets/Technoogy/Backend/phython/Framework/zope-icon.png";
-import frame4 from "../../../../assets/Technoogy/Backend/phython/Framework/web2py.svg";
-import frame5 from "../../../../assets/Technoogy/Backend/phython/Framework/pyramid.png";
-import frame6 from "../../../../assets/Technoogy/Backend/phython/Framework/scrapy-icon.png";
-import frame7 from "../../../../assets/Technoogy/Backend/phython/Framework/requests-icon.png";
-import frame8 from "../../../../assets/Technoogy/Backend/phython/Framework/fabric-icon-1.png";
-import frame9 from "../../../../assets/Technoogy/Backend/phython/Framework/pika-icon.png";
+import frame1 from "../../../../assets/Technology/Backend/phython/Framework/django-logo.png";
+import frame2 from "../../../../assets/Technology/Backend/phython/Framework/flask.svg";
+import frame3 from "../../../../assets/Technology/Backend/phython/Framework/zope-icon.png";
+import frame4 from "../../../../assets/Technology/Backend/phython/Framework/web2py.svg";
+import frame5 from "../../../../assets/Technology/Backend/phython/Framework/pyramid.png";
+import frame6 from "../../../../assets/Technology/Backend/phython/Framework/scrapy-icon.png";
+import frame7 from "../../../../assets/Technology/Backend/phython/Framework/requests-icon.png";
+import frame8 from "../../../../assets/Technology/Backend/phython/Framework/fabric-icon-1.png";
+import frame9 from "../../../../assets/Technology/Backend/phython/Framework/pika-icon.png";
 
-import data1 from "../../../../assets/Technoogy/Backend/phython/database/net-core-icon.png";
-import data2 from "../../../../assets/Technoogy/Backend/phython/database/oracle-icon.png";
-import data3 from "../../../../assets/Technoogy/Backend/phython/database/sqlite-icon.png";
-import data4 from "../../../../assets/Technoogy/Backend/phython/database/ms-sql.svg";
-import data5 from "../../../../assets/Technoogy/Backend/phython/database/mongo-db-icon.png";
-import data6 from "../../../../assets/Technoogy/Backend/phython/database/postgre-icon.png";
-import data7 from "../../../../assets/Technoogy/Backend/phython/database/redis-icon.png";
+import data1 from "../../../../assets/Technology/Backend/phython/database/net-core-icon.png";
+import data2 from "../../../../assets/Technology/Backend/phython/database/oracle-icon.png";
+import data3 from "../../../../assets/Technology/Backend/phython/database/sqlite-icon.png";
+import data4 from "../../../../assets/Technology/Backend/phython/database/ms-sql.svg";
+import data5 from "../../../../assets/Technology/Backend/phython/database/mongo-db-icon.png";
+import data6 from "../../../../assets/Technology/Backend/phython/database/postgre-icon.png";
+import data7 from "../../../../assets/Technology/Backend/phython/database/redis-icon.png";
 
-import tool1 from "../../../../assets/Technoogy/Backend/phython/tools/slack-icon.png";
-import tool2 from "../../../../assets/Technoogy/Backend/phython/tools/asana-icon.png";
-import tool3 from "../../../../assets/Technoogy/Backend/phython/tools/trello-icon.png";
-import tool4 from "../../../../assets/Technoogy/Backend/phython/tools/jira-logo.png";
+import tool1 from "../../../../assets/Technology/Backend/phython/tools/slack-icon.png";
+import tool2 from "../../../../assets/Technology/Backend/phython/tools/asana-icon.png";
+import tool3 from "../../../../assets/Technology/Backend/phython/tools/trello-icon.png";
+import tool4 from "../../../../assets/Technology/Backend/phython/tools/jira-logo.png";
 
 
-import palat1 from "../../../../assets/Technoogy/Backend/phython/platforms/numpy.png";
-import palat2 from "../../../../assets/Technoogy/Backend/phython/platforms/celery.png";
-import palat3 from "../../../../assets/Technoogy/Backend/phython/platforms/gunicorn-icon.png";
-import palat4 from "../../../../assets/Technoogy/Backend/phython/platforms/numpy.png";
-import palat5 from "../../../../assets/Technoogy/Backend/phython/platforms/pytest.png";
+import palat1 from "../../../../assets/Technology/Backend/phython/platforms/numpy.png";
+import palat2 from "../../../../assets/Technology/Backend/phython/platforms/celery.png";
+import palat3 from "../../../../assets/Technology/Backend/phython/platforms/gunicorn-icon.png";
+import palat4 from "../../../../assets/Technology/Backend/phython/platforms/numpy.png";
+import palat5 from "../../../../assets/Technology/Backend/phython/platforms/pytest.png";
 
 
 import { useTheme } from "@emotion/react";

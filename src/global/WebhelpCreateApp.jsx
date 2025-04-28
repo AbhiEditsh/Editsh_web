@@ -1,12 +1,12 @@
 import React from "react";
-import service1 from "../assets/Technoogy/service/service1.png";
-import service2 from "../assets/Technoogy/service/service2.png";
-import service3 from "../assets/Technoogy/service/service3.png";
+import service1 from "../assets/Technology/service/service1.png";
+import service2 from "../assets/Technology/service/service2.png";
+import service3 from "../assets/Technology/service/service3.png";
 import { useTheme } from "@emotion/react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { Titleanimation } from "./Titleanimation";
+import { TitleAnimation } from "./TitleAnimation";
 
-function WebhelpCreateApp() {
+function WebHelpCreateApp() {
   const theme = useTheme();
   const WebAppServices = [
     {
@@ -36,7 +36,7 @@ function WebhelpCreateApp() {
           backgroundColor: theme.palette.primary.main,
         }}
       >
-        <Titleanimation title="We help you create Apps for" />
+        <TitleAnimation title="We help you create Apps for" />
         <Box sx={{ py: { xs: 4, sm: 4, lg: 10 } }}>
           <Container>
             <Grid container rowSpacing={1} columnSpacing={2}>
@@ -75,7 +75,7 @@ function WebhelpCreateApp() {
                       sx={{
                         fontSize: "14px",
                         textAlign: "center",
-                        color: theme.palette.lightwhite,
+                        color: theme.palette.lightWhite,
                       }}
                     >
                       {item.description}
@@ -91,4 +91,4 @@ function WebhelpCreateApp() {
   );
 }
 
-export default WebhelpCreateApp;
+export default WebHelpCreateApp;

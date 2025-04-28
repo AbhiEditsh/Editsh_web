@@ -1,21 +1,21 @@
 import React from "react";
-import Pagetitle from "../../../../global/Pagetitle";
+import PageTitle from "../../../../global/PageTitle";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import { Link } from "react-router-dom";
-import { Titleanimation } from "../../../../global/Titleanimation";
-import Ser1 from "../../../../assets/Technoogy/front/vue js/services/Consultation.png";
-import Ser2 from "../../../../assets/Technoogy/front/vue js/services/Storefrontdevelopment.png";
-import Ser3 from "../../../../assets/Technoogy/front/vue js/services/componentdevelopment.png";
-import Ser4 from "../../../../assets/Technoogy/front/vue js/services/Migration.png";
-import Ser5 from "../../../../assets/Technoogy/front/vue js/services/Data-Analysis.png";
-import Ser6 from "../../../../assets/Technoogy/front/vue js/services/Daashbords.png";
-import Ser7 from "../../../../assets/Technoogy/front/vue js/services/Interactive.png";
-import Ser8 from "../../../../assets/Technoogy/front/vue js/services/customwebdevelopment.png";
-import Ser9 from "../../../../assets/Technoogy/front/vue js/services/Migration.png";
+import { TitleAnimation } from "../../../../global/TitleAnimation";
+import Ser1 from "../../../../assets/Technology/front/vue js/services/Consultation.png";
+import Ser2 from "../../../../assets/Technology/front/vue js/services/Storefrontdevelopment.png";
+import Ser3 from "../../../../assets/Technology/front/vue js/services/componentdevelopment.png";
+import Ser4 from "../../../../assets/Technology/front/vue js/services/Migration.png";
+import Ser5 from "../../../../assets/Technology/front/vue js/services/Data-Analysis.png";
+import Ser6 from "../../../../assets/Technology/front/vue js/services/Daashbords.png";
+import Ser7 from "../../../../assets/Technology/front/vue js/services/Interactive.png";
+import Ser8 from "../../../../assets/Technology/front/vue js/services/customwebdevelopment.png";
+import Ser9 from "../../../../assets/Technology/front/vue js/services/Migration.png";
 import ProjectPricing from "../../../../global/ProjectPricing";
 import VuuejsPanel from "./VuuejsPanel";
-import TrutedProject from "../../../../global/TrutedProject";
+import TrustedProject from "../../../../global/TrustedProject";
 import RequestQuote from "../../../../global/RequestQuote";
 import ProjectIndustry from "../../../../global/ProjectIndustry";
 import RIghtBtn from "../../../../global/Button/RIghtBtn";
@@ -111,7 +111,7 @@ function VueJsdevelopment() {
   return (
     <>
       <SEO title="Editsh -Top Vuejs Development Company" />
-      <Pagetitle title="Vue Js Development" />
+      <PageTitle title="Vue Js Development" />
       {/* About Vue js Development */}
       <Box
         sx={{
@@ -311,7 +311,7 @@ function VueJsdevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Our Vuejs development services" />
+          <TitleAnimation title="Our Vuejs development services" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -420,7 +420,7 @@ function VueJsdevelopment() {
         }}
       >
         <Container>
-          <Titleanimation
+          <TitleAnimation
             title="Hire VueJs Developers As Per Your Needs
 "
           />
@@ -446,7 +446,7 @@ function VueJsdevelopment() {
           md: 8,
         }}
       >
-        <Titleanimation title={`Benefits of Vue.js Development Services`} />
+        <TitleAnimation title={`Benefits of Vue.js Development Services`} />
         <Container>
           <Typography
             sx={{
@@ -532,7 +532,7 @@ function VueJsdevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title={`Technologies That We Work Wit`} />
+          <TitleAnimation title={`Technologies That We Work Wit`} />
           <VuuejsPanel />
         </Container>
       </Box>
@@ -547,7 +547,7 @@ function VueJsdevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="What Makes Editsh Most-Trusted VueJS Development Service Provider?" />
+          <TitleAnimation title="What Makes Editsh Most-Trusted VueJS Development Service Provider?" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -562,7 +562,7 @@ function VueJsdevelopment() {
             VueJs applications. Here are some of the reasons why choosing to
             build VueJs applications is the best option:
           </Typography>
-          <TrutedProject />
+          <TrustedProject />
         </Container>
       </Box>
       <ProjectIndustry />

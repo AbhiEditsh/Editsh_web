@@ -1,23 +1,23 @@
 import React from "react";
-import Pagetitle from "../../global/Pagetitle";
-import { Titleanimation } from "../../global/Titleanimation";
+import PageTitle from "../../global/PageTitle";
+import { TitleAnimation } from "../../global/TitleAnimation";
 import { Link } from "react-router-dom";
-import icon1 from "../../assets/Technoogy/front/angular.png";
-import icon2 from "../../assets/Technoogy/front/reactjs.png";
-import icon3 from "../../assets/Technoogy/front/vuejs.png";
+import icon1 from "../../assets/Technology/front/angular.png";
+import icon2 from "../../assets/Technology/front/reactjs.png";
+import icon3 from "../../assets/Technology/front/vuejs.png";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import ico1 from "../../assets/Technoogy/front/angular.png";
-import ico2 from "../../assets/Technoogy/front/flutter.png";
-import ico3 from "../../assets/Technoogy/front/js.png";
-import ico4 from "../../assets/Technoogy/front/reactjs.png";
-import ico5 from "../../assets/Technoogy/front/typescript.png";
-import ico6 from "../../assets/Technoogy/front/vuejs.png";
-import ico7 from "../../assets/Technoogy/front/wordpress.png";
-import ico8 from "../../assets/Technoogy/front/html.png";
+import ico1 from "../../assets/Technology/front/angular.png";
+import ico2 from "../../assets/Technology/front/flutter.png";
+import ico3 from "../../assets/Technology/front/js.png";
+import ico4 from "../../assets/Technology/front/reactjs.png";
+import ico5 from "../../assets/Technology/front/typescript.png";
+import ico6 from "../../assets/Technology/front/vuejs.png";
+import ico7 from "../../assets/Technology/front/wordpress.png";
+import ico8 from "../../assets/Technology/front/html.png";
 
 import { useTheme } from "@emotion/react";
-import frontEndDevelopment from "../../assets/Technoogy/front/frontenddevelopment.avif";
-import WebhelpCreateApp from "../../global/WebhelpCreateApp";
+import frontEndDevelopment from "../../assets/Technology/front/frontenddevelopment.avif";
+import WebhelpCreateApp from "../../global/WebHelpCreateApp.jsx";
 
 function Frontend() {
   const theme = useTheme();
@@ -48,7 +48,7 @@ function Frontend() {
 
   return (
     <>
-      <Pagetitle title="Frontend" />
+      <PageTitle title="Frontend" />
 
       <Box
         sx={{
@@ -58,7 +58,7 @@ function Frontend() {
           },
         }}
       >
-        <Titleanimation title="Front end Technologies we work with" />
+        <TitleAnimation title="Front end Technologies we work with" />
         <Box sx={{ py: { sm: 4, xs: 3, lg: 8 } }}>
           <Container>
             <Grid container rowSpacing={1} columnSpacing={2}>
@@ -97,7 +97,7 @@ function Frontend() {
                       <Typography
                         sx={{
                           fontSize: "14px",
-                          color: theme.palette.lightwhite,
+                          color: theme.palette.lightWhite,
                         }}
                       >
                         {item.description}
@@ -112,11 +112,11 @@ function Frontend() {
 
         <Box sx={{ py: { sm: 4, xs: 3, lg: 8 } }}>
           <Container>
-            <Titleanimation title="How does Editsh help?" />
+            <TitleAnimation title="How does Editsh help?" />
             <Typography
               sx={{
                 fs: { sm: "18px", lg: "12px" },
-                color: theme.palette.lightwhite,
+                color: theme.palette.lightWhite,
                 textAlign: "center",
                 letterSpacing: "0.5px",
                 py: 4,

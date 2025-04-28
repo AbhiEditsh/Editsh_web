@@ -1,20 +1,20 @@
 import React from "react";
-import Pagetitle from "../../../../global/Pagetitle";
+import PageTitle from "../../../../global/PageTitle";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useTheme } from "@emotion/react";
-import s1 from "../../../../assets/Technoogy/Backend/phython/services/s1.png";
-import s2 from "../../../../assets/Technoogy/Backend/phython/services/s2.png";
-import s3 from "../../../../assets/Technoogy/Backend/phython/services/s3.png";
-import s4 from "../../../../assets/Technoogy/Backend/phython/services/s4.png";
-import s5 from "../../../../assets/Technoogy/Backend/phython/services/s5.png";
-import s6 from "../../../../assets/Technoogy/Backend/phython/services/s6.png";
-import s7 from "../../../../assets/Technoogy/Backend/phython/services/s7.png";
-import s8 from "../../../../assets/Technoogy/Backend/phython/services/s8.png";
-import s9 from "../../../../assets/Technoogy/Backend/phython/services/s9.png";
-import { Titleanimation } from "../../../../global/Titleanimation";
+import s1 from "../../../../assets/Technology/Backend/phython/services/s1.png";
+import s2 from "../../../../assets/Technology/Backend/phython/services/s2.png";
+import s3 from "../../../../assets/Technology/Backend/phython/services/s3.png";
+import s4 from "../../../../assets/Technology/Backend/phython/services/s4.png";
+import s5 from "../../../../assets/Technology/Backend/phython/services/s5.png";
+import s6 from "../../../../assets/Technology/Backend/phython/services/s6.png";
+import s7 from "../../../../assets/Technology/Backend/phython/services/s7.png";
+import s8 from "../../../../assets/Technology/Backend/phython/services/s8.png";
+import s9 from "../../../../assets/Technology/Backend/phython/services/s9.png";
+import { TitleAnimation } from "../../../../global/TitleAnimation";
 import ProjectPricing from "../../../../global/ProjectPricing";
-import TrutedProject from "../../../../global/TrutedProject";
+import TrustedProject from "../../../../global/TrustedProject";
 import ProjectIndustry from "../../../../global/ProjectIndustry";
 import RequestQuote from "../../../../global/RequestQuote";
 import PhythonPanel from "./PhythonPanel";
@@ -145,7 +145,7 @@ function PhythonDevelopment() {
   return (
     <>
       <SEO title="Editsh - Top Python development Company" />
-      <Pagetitle title="Python development" />
+      <PageTitle title="Python development" />
       <Box
         sx={{
           py: {
@@ -356,7 +356,7 @@ function PhythonDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Python Application Development Services" />
+          <TitleAnimation title="Python Application Development Services" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -467,7 +467,7 @@ function PhythonDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Hire Python Developer base on your need" />
+          <TitleAnimation title="Hire Python Developer base on your need" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -620,7 +620,7 @@ function PhythonDevelopment() {
           },
         }}
       >
-        <Titleanimation title={`Benefits of React.js Development Services`} />
+        <TitleAnimation title={`Benefits of React.js Development Services`} />
         <Container>
           <Typography
             sx={{
@@ -707,7 +707,7 @@ function PhythonDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation
+          <TitleAnimation
             title={`What Makes Editsh Trusted Leader in Python Development Services Provider?`}
           />
           <Typography
@@ -740,7 +740,7 @@ function PhythonDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="What Makes Editsh Trusted Leader in Python Development Services Provider?" />
+          <TitleAnimation title="What Makes Editsh Trusted Leader in Python Development Services Provider?" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -756,7 +756,7 @@ function PhythonDevelopment() {
             development. Here are some of the reasons why choosing to build
             Python applications is the best option:
           </Typography>
-          <TrutedProject />
+          <TrustedProject />
         </Container>
       </Box>
       <ProjectIndustry />

@@ -74,7 +74,7 @@ function RequestQuote() {
                     to="/contact"
                     style={{
                       backgroundColor: theme.palette.primary.main,
-                      color: theme.palette.lightwhite,
+                      color: theme.palette.lightWhite,
                       fontWeight: "600",
                       padding: "10px",
                       textAlign: "center",

@@ -6,10 +6,10 @@ import s3 from "../../assets/Services/s3.webp";
 import s2 from "../../assets/Services/s2.png";
 import s1 from "../../assets/Services/s1.webp";
 import backImage from "../../assets/Services/backimage.webp";
-import { Titleanimation } from "../../global/Titleanimation";
+import { TitleAnimation } from "../../global/TitleAnimation";
 import { Link } from "react-router-dom";
 
-function Ourservices() {
+function OurServices() {
   const theme = useTheme();
 
   return (
@@ -23,7 +23,7 @@ function Ourservices() {
           fontFamily: theme.typography.fontFamily,
         }}
       >
-        <Titleanimation title="Our Services" />
+        <TitleAnimation title="Our Services" />
       </Box>
       <Grid container spacing={3} sx={{ py: { sm: 2, md: 6, lg: 8 } }}>
         <Grid
@@ -208,7 +208,7 @@ function Ourservices() {
               to="/contact"
               style={{
                 display: "inline-block",
-                backgroundColor: theme.palette.lightwhite,
+                backgroundColor: theme.palette.lightWhite,
                 color: theme.palette.white,
                 padding: "6px",
                 textAlign: "center",
@@ -228,4 +228,4 @@ function Ourservices() {
   );
 }
 
-export default Ourservices;
+export default OurServices;

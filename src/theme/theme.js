@@ -14,8 +14,8 @@ const theme = createTheme({
       main: "#8c8c8c",
     },
     white: "#fff",
-    lightwhite: "#404040",
-    offwhite: "#ddd",
+    lightWhite: "#404040",
+    offWhite: "#ddd",
     lightBlack: "#1a1a1a",
     warning: {
       main: "#f7dc6f",

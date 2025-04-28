@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import Pagetitle from "../../global/Pagetitle";
+import PageTitle from "../../global/PageTitle";
 import { useTheme } from "@emotion/react";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -75,7 +75,7 @@ export default function Faq() {
 
   return (
     <>
-      <Pagetitle
+      <PageTitle
         title={`FAQ`}
         description={`
         We are Surat-based IT Solution Providers committed to providing the best services for the growth of our valuable clients and their varied businesses.`}

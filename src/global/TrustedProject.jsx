@@ -1,17 +1,17 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
-import P1 from "../../src/assets/Technoogy/front/project/dedicatedteam.png";
-import P2 from "../../src/assets/Technoogy/front/project/100stisfaction.png";
-import P3 from "../../src/assets/Technoogy/front/project/freetrial.png";
-import P4 from "../../src/assets/Technoogy/front/project/nohiddencost.png";
-import P5 from "../../src/assets/Technoogy/front/project/Agreement.png";
-import P6 from "../../src/assets/Technoogy/front/project/easypolicy.png";
-import P7 from "../../src/assets/Technoogy/front/project/onetimeproject.png";
-import P8 from "../../src/assets/Technoogy/front/project/timezone.png";
-import P9 from "../../src/assets/Technoogy/front/project/documentation.png";
+import P1 from "../../src/assets/Technology/front/project/dedicatedteam.png";
+import P2 from "../../src/assets/Technology/front/project/100stisfaction.png";
+import P3 from "../../src/assets/Technology/front/project/freetrial.png";
+import P4 from "../../src/assets/Technology/front/project/nohiddencost.png";
+import P5 from "../../src/assets/Technology/front/project/Agreement.png";
+import P6 from "../../src/assets/Technology/front/project/easypolicy.png";
+import P7 from "../../src/assets/Technology/front/project/onetimeproject.png";
+import P8 from "../../src/assets/Technology/front/project/timezone.png";
+import P9 from "../../src/assets/Technology/front/project/documentation.png";
 import { useTheme } from "@emotion/react";
 
-function TrutedProject() {
+function TrustedProject() {
   const theme = useTheme();
 
   const Project = [
@@ -124,4 +124,4 @@ function TrutedProject() {
   );
 }
 
-export default TrutedProject;
+export default TrustedProject;

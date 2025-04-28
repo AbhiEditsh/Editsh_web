@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Pagetitle from "../../global/Pagetitle";
+import PageTitle from "../../global/PageTitle";
 import { Box, Container, Button, Grid, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import ci1 from "../../assets/Career/ci1.svg";
@@ -8,7 +8,7 @@ import ci3 from "../../assets/Career/ci3.svg";
 import ci4 from "../../assets/Career/ci4.svg";
 import ci5 from "../../assets/Career/ci5.svg";
 import ci6 from "../../assets/Career/ci6.svg";
-import { Titleanimation } from "../../global/Titleanimation";
+import { TitleAnimation } from "../../global/TitleAnimation";
 import UploadCvForm from "../../global/UploadCvForm";
 import axios from "axios";
 import SEO from "../../global/SEO/SEO";
@@ -82,7 +82,7 @@ function Career() {
   const fetchTechnology = async () => {
     try {
       const response = await axios.get(
-        "https://editsh-back-anft.onrender.com/api/technology/view"
+        `${process.env.REACT_APP_API_BASE_URL}/technology/view`
       );
       setTechnology(response?.data?.data);
     } catch (err) {
@@ -101,7 +101,7 @@ function Career() {
   return (
     <>
       <SEO title="Career - Best It Company" />
-      <Pagetitle
+      <PageTitle
         title={`Career`}
         description={`
         We are Surat-based IT Solution Providers committed to providing the best services for the growth of our valuable clients and their varied businesses.`}
@@ -116,7 +116,7 @@ function Career() {
           },
         }}
       >
-        <Titleanimation title="Our Hiring Process" />
+        <TitleAnimation title="Our Hiring Process" />
         <Grid
           container
           rowSpacing={1}
@@ -162,7 +162,7 @@ function Career() {
                     sx={{
                       fontSize: "50px",
                       fontWeight: "bold",
-                      color: theme.palette.lightwhite,
+                      color: theme.palette.lightWhite,
                       fontFamily: '"Rubik Vinyl", system-ui',
                     }}
                   >
@@ -171,7 +171,7 @@ function Career() {
                 </Box>
                 <Typography
                   sx={{
-                    color: theme.palette.lightwhite,
+                    color: theme.palette.lightWhite,
                     fontSize: "20px",
                     fontWeight: "600",
                     py: 1,
@@ -269,15 +269,14 @@ function Career() {
                   data-aos="fade-left"
                   data-aos-duration="2000"
                 >
-                  There are many reasons why you might want to join the Settings
-                  Infotech team. Here are a few
+                  There are many reasons why you might want to join the Editsh team. Here are a few
                 </Typography>
                 <Box data-aos="fade-left" data-aos-duration="2000">
                   <Typography
                     sx={{
                       fontSize: "14px",
                       pb: 2,
-                      color: theme.palette.lightwhite,
+                      color: theme.palette.lightWhite,
                     }}
                   >
                     We are a fast-paced and dynamic company. We are always
@@ -289,7 +288,7 @@ function Career() {
                     sx={{
                       fontSize: "14px",
                       pb: 2,
-                      color: theme.palette.lightwhite,
+                      color: theme.palette.lightWhite,
                     }}
                   >
                     We offer competitive salaries and benefits. We want to make
@@ -300,7 +299,7 @@ function Career() {
                     sx={{
                       fontSize: "14px",
                       pb: 2,
-                      color: theme.palette.lightwhite,
+                      color: theme.palette.lightWhite,
                     }}
                   >
                     We have a great culture. We believe that a positive and
@@ -310,7 +309,7 @@ function Career() {
                     sx={{
                       fontSize: "14px",
                       pb: 2,
-                      color: theme.palette.lightwhite,
+                      color: theme.palette.lightWhite,
                     }}
                   >
                     We are always learning and growing. We offer opportunities
@@ -321,11 +320,11 @@ function Career() {
                     sx={{
                       fontSize: "14px",
                       pb: 2,
-                      color: theme.palette.lightwhite,
+                      color: theme.palette.lightWhite,
                     }}
                   >
                     If you are looking for a challenging and rewarding career in
-                    software development, then Settings Infotech is the perfect
+                    software development, then Editsh  is the perfect
                     place for you. We encourage you to apply today!
                   </Typography>
                 </Box>
@@ -342,7 +341,7 @@ function Career() {
           },
         }}
       >
-        <Titleanimation title="Current Open Position" />
+        <TitleAnimation title="Current Open Position" />
         <Box
           sx={{
             py: {
@@ -417,13 +416,13 @@ function Career() {
                           display: "flex",
                           justifyContent: "space-between",
                           fontSize: "16px",
-                          color: theme.palette.lightwhite,
+                          color: theme.palette.lightWhite,
                         }}
                       >
                         <Box
                           sx={{
                             fontWeight: "500",
-                            color: theme.palette.lightwhite,
+                            color: theme.palette.lightWhite,
                           }}
                         >
                           Experience:
@@ -437,13 +436,13 @@ function Career() {
                           display: "flex",
                           justifyContent: "space-between",
                           fontSize: "16px",
-                          color: theme.palette.lightwhite,
+                          color: theme.palette.lightWhite,
                         }}
                       >
                         <Box
                           sx={{
                             fontWeight: "500",
-                            color: theme.palette.lightwhite,
+                            color: theme.palette.lightWhite,
                           }}
                         >
                           No. of Openings:
@@ -457,13 +456,13 @@ function Career() {
                           display: "flex",
                           justifyContent: "space-between",
                           fontSize: "16px",
-                          color: theme.palette.lightwhite,
+                          color: theme.palette.lightWhite,
                         }}
                       >
                         <Box
                           sx={{
                             fontWeight: "500",
-                            color: theme.palette.lightwhite,
+                            color: theme.palette.lightWhite,
                           }}
                         >
                           Qualifications:
@@ -516,7 +515,7 @@ function Career() {
         }}
       >
         <Container>
-          <Titleanimation title="Apply For Job" />
+          <TitleAnimation title="Apply For Job" />
           <Box
             ref={uploadCvRef}
             sx={{

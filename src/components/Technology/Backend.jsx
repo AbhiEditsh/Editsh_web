@@ -1,22 +1,22 @@
 import React from "react";
-import Pagetitle from "../../global/Pagetitle";
-import { Titleanimation } from "../../global/Titleanimation";
+import PageTitle from "../../global/PageTitle";
+import { TitleAnimation } from "../../global/TitleAnimation";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import icon1 from "../../assets/Technoogy/Backend/nodejs.png";
-import icon3 from "../../assets/Technoogy/Backend/net.png";
-import icon5 from "../../assets/Technoogy/Backend/phython.png";
-import ico1 from "../../assets/Technoogy/Backend/django.png";
-import ico2 from "../../assets/Technoogy/Backend/java.png";
-import ico3 from "../../assets/Technoogy/Backend/laravel.png";
-import ico4 from "../../assets/Technoogy/Backend/net.png";
-import ico5 from "../../assets/Technoogy/Backend/nodejs.png";
-import ico6 from "../../assets/Technoogy/Backend/php.png";
-import ico7 from "../../assets/Technoogy/Backend/phython.png";
+import icon1 from "../../assets/Technology/Backend/nodejs.png";
+import icon3 from "../../assets/Technology/Backend/net.png";
+import icon5 from "../../assets/Technology/Backend/phython.png";
+import ico1 from "../../assets/Technology/Backend/django.png";
+import ico2 from "../../assets/Technology/Backend/java.png";
+import ico3 from "../../assets/Technology/Backend/laravel.png";
+import ico4 from "../../assets/Technology/Backend/net.png";
+import ico5 from "../../assets/Technology/Backend/nodejs.png";
+import ico6 from "../../assets/Technology/Backend/php.png";
+import ico7 from "../../assets/Technology/Backend/phython.png";
 
 import { useTheme } from "@emotion/react";
-import backenddevelopment from "../../assets/Technoogy/Backend/backenddevelopment.avif";
-import WebhelpCreateApp from "../../global/WebhelpCreateApp";
+import BackendDevelopment from "../../assets/Technology/Backend/backenddevelopment.avif";
+import WebhelpCreateApp from "../../global/WebHelpCreateApp";
 
 function Backend() {
   const theme = useTheme();
@@ -47,7 +47,7 @@ function Backend() {
 
   return (
     <>
-      <Pagetitle title="Backend" />
+      <PageTitle title="Backend" />
       <Box
         sx={{
           py: {
@@ -56,7 +56,7 @@ function Backend() {
           },
         }}
       >
-        <Titleanimation title="Mobile Technologies We Use" />
+        <TitleAnimation title="Mobile Technologies We Use" />
         <Box sx={{ py: { sm: 4, xs: 3, lg: 8 } }}>
           <Container>
             <Grid container rowSpacing={1} columnSpacing={2}>
@@ -65,7 +65,7 @@ function Backend() {
                   <Link to={item.link} style={{ textDecoration: "none" }}>
                     <Box
                       sx={{
-                        border: `5px solid ${theme.palette.lightwhite}`,
+                        border: `5px solid ${theme.palette.lightWhite}`,
                         p: 4,
                         display: "flex",
                         flexDirection: "column",
@@ -95,7 +95,7 @@ function Backend() {
                       <Typography
                         sx={{
                           fontSize: "14px",
-                          color: theme.palette.lightwhite,
+                          color: theme.palette.lightWhite,
                         }}
                       >
                         {item.description}
@@ -110,11 +110,11 @@ function Backend() {
 
         <Box sx={{ py: { sm: 4, xs: 3, lg: 8 } }}>
           <Container>
-            <Titleanimation title="What we want you to understand" />
+            <TitleAnimation title="What we want you to understand" />
             <Typography
               sx={{
                 fs: { sm: "18px", lg: "12px" },
-                color: theme.palette.lightwhite,
+                color: theme.palette.lightWhite,
                 textAlign: "center",
                 letterSpacing: "0.5px",
                 py: 4,
@@ -153,7 +153,7 @@ function Backend() {
                 alignItems: "center",
               }}
             >
-              <img src={backenddevelopment} alt="backenddevelopment" />
+              <img src={BackendDevelopment} alt="BackendDevelopment" />
             </Box>
           </Container>
         </Box>

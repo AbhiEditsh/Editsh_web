@@ -2,28 +2,28 @@ import React from "react";
 import { useTheme } from "@emotion/react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import Pagetitle from "../../../../global/Pagetitle";
+import PageTitle from "../../../../global/PageTitle";
 import AddIcon from "@mui/icons-material/Add";
-import { Titleanimation } from "../../../../global/Titleanimation";
-import si1 from "../../../../assets/Technoogy/front/reactjs/service/ri1.png";
-import si2 from "../../../../assets/Technoogy/front/reactjs/service/ri2.png";
-import si3 from "../../../../assets/Technoogy/front/reactjs/service/ri3.png";
-import si4 from "../../../../assets/Technoogy/front/reactjs/service/ri4.png";
-import si5 from "../../../../assets/Technoogy/front/reactjs/service/ri5.png";
-import si6 from "../../../../assets/Technoogy/front/reactjs/service/ri6.png";
-import si7 from "../../../../assets/Technoogy/front/reactjs/service/ri7.png";
-import si8 from "../../../../assets/Technoogy/front/reactjs/service/ri8.png";
-import si9 from "../../../../assets/Technoogy/front/reactjs/service/ri9.png";
-import react from "../../../../assets/Technoogy/front//reactjs/tools/react-js.png";
-import mern from "../../../../assets/Technoogy/front//reactjs/tools/mern-stack.png";
-import graphql from "../../../../assets/Technoogy/front//reactjs/tools/graph-ql-icon.png";
-import firebase from "../../../../assets/Technoogy/front//reactjs/tools/firebase-icon.png";
-import django from "../../../../assets/Technoogy/front//reactjs/tools/django-logo.png";
-import fastapi from "../../../../assets/Technoogy/front//reactjs/tools/fastapi-svg.svg";
+import { TitleAnimation } from "../../../../global/TitleAnimation";
+import si1 from "../../../../assets/Technology/front/reactjs/service/ri1.png";
+import si2 from "../../../../assets/Technology/front/reactjs/service/ri2.png";
+import si3 from "../../../../assets/Technology/front/reactjs/service/ri3.png";
+import si4 from "../../../../assets/Technology/front/reactjs/service/ri4.png";
+import si5 from "../../../../assets/Technology/front/reactjs/service/ri5.png";
+import si6 from "../../../../assets/Technology/front/reactjs/service/ri6.png";
+import si7 from "../../../../assets/Technology/front/reactjs/service/ri7.png";
+import si8 from "../../../../assets/Technology/front/reactjs/service/ri8.png";
+import si9 from "../../../../assets/Technology/front/reactjs/service/ri9.png";
+import react from "../../../../assets/Technology/front//reactjs/tools/react-js.png";
+import mern from "../../../../assets/Technology/front//reactjs/tools/mern-stack.png";
+import graphql from "../../../../assets/Technology/front//reactjs/tools/graph-ql-icon.png";
+import firebase from "../../../../assets/Technology/front//reactjs/tools/firebase-icon.png";
+import django from "../../../../assets/Technology/front//reactjs/tools/django-logo.png";
+import fastapi from "../../../../assets/Technology/front//reactjs/tools/fastapi-svg.svg";
 import ReactjsPanel from "./ReactjsPanel";
 import RequestQuote from "../../../../global/RequestQuote";
 import ProjectIndustry from "../../../../global/ProjectIndustry";
-import TrutedProject from "../../../../global/TrutedProject";
+import TrustedProject from "../../../../global/TrustedProject";
 import RIghtBtn from "../../../../global/Button/RIghtBtn";
 import SEO from "../../../../global/SEO/SEO";
 
@@ -150,7 +150,7 @@ function ReactjsDevelopment() {
   return (
     <>
       <SEO title="Top React js Development Company" />
-      <Pagetitle title="React js  Development" />
+      <PageTitle title="React js  Development" />
       <Box
         sx={{
           py: {
@@ -341,7 +341,7 @@ function ReactjsDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Flutter App Development Service" />
+          <TitleAnimation title="Flutter App Development Service" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -451,7 +451,7 @@ function ReactjsDevelopment() {
           },
         }}
       >
-        <Titleanimation title={`The React js Development Toolkit`} />
+        <TitleAnimation title={`The React js Development Toolkit`} />
         <Container>
           <Typography
             sx={{
@@ -561,7 +561,7 @@ function ReactjsDevelopment() {
           md: 8,
         }}
       >
-        <Titleanimation title={`Benefits of React.js Development Services`} />
+        <TitleAnimation title={`Benefits of React.js Development Services`} />
         <Container>
           <Typography
             sx={{
@@ -648,7 +648,7 @@ function ReactjsDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title="Why Should You Choose Editsh for your ReactJS Development Project?" />
+          <TitleAnimation title="Why Should You Choose Editsh for your ReactJS Development Project?" />
           <Typography
             sx={{
               fontSize: "14px",
@@ -662,7 +662,7 @@ function ReactjsDevelopment() {
             specialization in building mobile apps, enterprise apps, and
             eCommerce platforms using React's power for unmatched performance.
           </Typography>
-          <TrutedProject />
+          <TrustedProject />
         </Container>
       </Box>
 
@@ -676,7 +676,7 @@ function ReactjsDevelopment() {
         }}
       >
         <Container>
-          <Titleanimation title={`Technologies That We Work With`} />
+          <TitleAnimation title={`Technologies That We Work With`} />
           <ReactjsPanel />
         </Container>
       </Box>

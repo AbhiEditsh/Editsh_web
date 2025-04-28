@@ -6,34 +6,34 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
-import frame1 from "../../../../assets/Technoogy/Backend/Nodejs/frame work/koa-js-icon.png";
-import frame2 from "../../../../assets/Technoogy/Backend/Nodejs/frame work/express-js.webp";
-import frame3 from "../../../../assets/Technoogy/Backend/Nodejs/frame work/meterjs-icon.png";
-import frame4 from "../../../../assets/Technoogy/Backend/Nodejs/frame work/socket-icon.png";
-import frame5 from "../../../../assets/Technoogy/Backend/Nodejs/frame work/babel-icon.png";
-import frame6 from "../../../../assets/Technoogy/Backend/Nodejs/frame work/hapi-icon.png";
-import frame7 from "../../../../assets/Technoogy/Backend/Nodejs/frame work/webpack-icon.png";
-import frame8 from "../../../../assets/Technoogy/Backend/Nodejs/frame work/nest-js-icon.png";
-import frame9 from "../../../../assets/Technoogy/Backend/Nodejs/frame work/sequlize-icon.png";
-import frame10 from "../../../../assets/Technoogy/Backend/Nodejs/frame work/loopback-icon.png";
+import frame1 from "../../../../assets/Technology/Backend/Nodejs/frame work/koa-js-icon.png";
+import frame2 from "../../../../assets/Technology/Backend/Nodejs/frame work/express-js.webp";
+import frame3 from "../../../../assets/Technology/Backend/Nodejs/frame work/meterjs-icon.png";
+import frame4 from "../../../../assets/Technology/Backend/Nodejs/frame work/socket-icon.png";
+import frame5 from "../../../../assets/Technology/Backend/Nodejs/frame work/babel-icon.png";
+import frame6 from "../../../../assets/Technology/Backend/Nodejs/frame work/hapi-icon.png";
+import frame7 from "../../../../assets/Technology/Backend/Nodejs/frame work/webpack-icon.png";
+import frame8 from "../../../../assets/Technology/Backend/Nodejs/frame work/nest-js-icon.png";
+import frame9 from "../../../../assets/Technology/Backend/Nodejs/frame work/sequlize-icon.png";
+import frame10 from "../../../../assets/Technology/Backend/Nodejs/frame work/loopback-icon.png";
 
 
-import data1 from "../../../../assets/Technoogy/Backend/Nodejs/database/mongo-db-icon.png";
-import data2 from "../../../../assets/Technoogy/Backend/Nodejs/database/mariadb-icon.png";
-import data3 from "../../../../assets/Technoogy/Backend/Nodejs/database/redis-icon.png";
-import data4 from "../../../../assets/Technoogy/Backend/Nodejs/database/dynamodb-icon.png";
-import data5 from "../../../../assets/Technoogy/Backend/Nodejs/database/postgre-icon.png";
+import data1 from "../../../../assets/Technology/Backend/Nodejs/database/mongo-db-icon.png";
+import data2 from "../../../../assets/Technology/Backend/Nodejs/database/mariadb-icon.png";
+import data3 from "../../../../assets/Technology/Backend/Nodejs/database/redis-icon.png";
+import data4 from "../../../../assets/Technology/Backend/Nodejs/database/dynamodb-icon.png";
+import data5 from "../../../../assets/Technology/Backend/Nodejs/database/postgre-icon.png";
 
 
-import tool1 from "../../../../assets/Technoogy/Backend/Nodejs/tools/jirs-icon.png";
-import tool2 from "../../../../assets/Technoogy/Backend/Nodejs/tools/slack-icon.png";
-import tool3 from "../../../../assets/Technoogy/Backend/Nodejs/tools/aqtime-icon.png";
-import tool4 from "../../../../assets/Technoogy/Backend/Nodejs/tools/trello-icon.png";
+import tool1 from "../../../../assets/Technology/Backend/Nodejs/tools/jirs-icon.png";
+import tool2 from "../../../../assets/Technology/Backend/Nodejs/tools/slack-icon.png";
+import tool3 from "../../../../assets/Technology/Backend/Nodejs/tools/aqtime-icon.png";
+import tool4 from "../../../../assets/Technology/Backend/Nodejs/tools/trello-icon.png";
 
-import palat1 from "../../../../assets/Technoogy/Backend/Nodejs/plateform/nodejs-icon.png";
-import palat2 from "../../../../assets/Technoogy/Backend/Nodejs/plateform/javascript-icon.png";
-import palat3 from "../../../../assets/Technoogy/Backend/Nodejs/plateform/typescript-icon.png";
-import palat4 from "../../../../assets/Technoogy/Backend/Nodejs/plateform/ecma-script-icon.png";
+import palat1 from "../../../../assets/Technology/Backend/Nodejs/plateform/nodejs-icon.png";
+import palat2 from "../../../../assets/Technology/Backend/Nodejs/plateform/javascript-icon.png";
+import palat3 from "../../../../assets/Technology/Backend/Nodejs/plateform/typescript-icon.png";
+import palat4 from "../../../../assets/Technology/Backend/Nodejs/plateform/ecma-script-icon.png";
 
 
 import { useTheme } from "@emotion/react";

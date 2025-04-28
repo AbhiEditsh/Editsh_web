@@ -1,22 +1,22 @@
 import React from "react";
-import Pagetitle from "../../../global/Pagetitle";
-import { Titleanimation } from "../../../global/Titleanimation";
+import PageTitle from "../../../global/PageTitle";
+import { TitleAnimation } from "../../../global/TitleAnimation";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import icon1 from "../../../assets/Technoogy/Mobile/apple.png";
-import icon2 from "../../../assets/Technoogy/Mobile/android.png";
-import icon3 from "../../../assets/Technoogy/Mobile/reactnative.png";
-import icon4 from "../../../assets/Technoogy/Mobile/flutter.png";
-import ico1 from "../../../assets/Technoogy/Mobile/android.png";
-import ico2 from "../../../assets/Technoogy/Mobile/apple.png";
-import ico3 from "../../../assets/Technoogy/Mobile/flutter.png";
-import ico4 from "../../../assets/Technoogy/Mobile/html.png";
-import ico5 from "../../../assets/Technoogy/Mobile/reactnative.png";
-import ico6 from "../../../assets/Technoogy/Mobile/xamarin.png";
+import icon1 from "../../../assets/Technology/Mobile/apple.png";
+import icon2 from "../../../assets/Technology/Mobile/android.png";
+import icon3 from "../../../assets/Technology/Mobile/reactnative.png";
+import icon4 from "../../../assets/Technology/Mobile/flutter.png";
+import ico1 from "../../../assets/Technology/Mobile/android.png";
+import ico2 from "../../../assets/Technology/Mobile/apple.png";
+import ico3 from "../../../assets/Technology/Mobile/flutter.png";
+import ico4 from "../../../assets/Technology/Mobile/html.png";
+import ico5 from "../../../assets/Technology/Mobile/reactnative.png";
+import ico6 from "../../../assets/Technology/Mobile/xamarin.png";
 
 import { useTheme } from "@emotion/react";
-import mobileAppDevelopment from "../../../assets/Technoogy/Mobile/mobileapp-developpment.avif";
-import WebhelpCreateApp from "../../../global/WebhelpCreateApp";
+import mobileAppDevelopment from "../../../assets/Technology/Mobile/mobileapp-developpment.avif";
+import WebhelpCreateApp from "../../../global/WebHelpCreateApp";
 
 function Mobile() {
   const theme = useTheme();
@@ -54,7 +54,7 @@ function Mobile() {
 
   return (
     <>
-      <Pagetitle title="Mobile" />
+      <PageTitle title="Mobile" />
 
       <Box
         sx={{
@@ -64,7 +64,7 @@ function Mobile() {
           },
         }}
       >
-        <Titleanimation title="Mobile Technologies We Use" />
+        <TitleAnimation title="Mobile Technologies We Use" />
         <Box sx={{ py: { sm: 4, xs: 3, lg: 8 } }}>
           <Container>
             <Grid container rowSpacing={1} columnSpacing={2}>
@@ -73,7 +73,7 @@ function Mobile() {
                   <Link to={item.link} style={{ textDecoration: "none" }}>
                     <Box
                       sx={{
-                        border: `5px solid ${theme.palette.lightwhite}`,
+                        border: `5px solid ${theme.palette.lightWhite}`,
                         p: 2,
                         display: "flex",
                         flexDirection: "column",
@@ -103,7 +103,7 @@ function Mobile() {
                       <Typography
                         sx={{
                           fontSize: "14px",
-                          color: theme.palette.lightwhite,
+                          color: theme.palette.lightWhite,
                         }}
                       >
                         {item.description}
@@ -118,11 +118,11 @@ function Mobile() {
 
         <Box sx={{ py: { sm: 4, xs: 3, lg: 8 } }}>
           <Container>
-            <Titleanimation title="How does Editsh help?" />
+            <TitleAnimation title="How does Editsh help?" />
             <Typography
               sx={{
                 fs: { sm: "18px", lg: "12px" },
-                color: theme.palette.lightwhite,
+                color: theme.palette.lightWhite,
                 textAlign: "center",
                 letterSpacing: "0.5px",
                 py: 4,
