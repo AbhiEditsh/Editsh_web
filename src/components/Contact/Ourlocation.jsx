@@ -44,6 +44,7 @@ const ContactBox = ({ icon: Icon, title, link, linkText }) => {
       </Typography>
       <Link
         to={link}
+        target="_blank"
         style={{
           textDecoration: "none",
           fontSize: "14px",
