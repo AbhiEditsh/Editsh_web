@@ -1,6 +1,6 @@
 import React from "react";
 import PageTitle from "../global/PageTitle";
-import OurLocation from "../components/Contact/OurLocation";
+import OurLocation from "../components/Contact/Ourlocation";
 import ContactForm from "../components/Contact/ContactForm";
 import SEO from "../global/SEO/SEO";
 

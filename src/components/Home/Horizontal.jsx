@@ -1,20 +1,22 @@
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Box, useMediaQuery, useTheme } from "@mui/material";
-// import img1 from "../../assets/product/img1.jpg";
+import React, { useState } from "react";
+import {
+  Box,
+  Grid,
+  Card,
+  CardMedia,
+  CardContent,
+  Typography,
+  useMediaQuery,
+  useTheme,
+  Container,
+} from "@mui/material";
 import img2 from "../../assets/product/img2.avif";
 import img3 from "../../assets/product/img3.jfif";
 import img4 from "../../assets/product/img4.jpeg";
 import img5 from "../../assets/product/img5.jpg";
 
-gsap.registerPlugin(ScrollTrigger);
-
 function Horizontal() {
-  const page2Ref = useRef(null);
   const theme = useTheme();
-
-  const isLgScreen = useMediaQuery(theme.breakpoints.down("lg"));
   const isSmScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   const industries = [
@@ -44,192 +46,89 @@ function Horizontal() {
       desc: "Enhance efficiency, transparency, and public services with our Government & Public Sector solutions. Partner with us to implement cutting-edge technologies and build a responsive, innovative public sector.",
     },
   ];
-  
 
-  useEffect(() => {
-    const container = page2Ref.current;
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: container,
-        start: "top top",
-        end: () => `+=${container.scrollWidth - window.innerWidth}`,
-        scrub: 2,
-        pin: true,
-        anticipatePin: 1,
-        markers: false,
-      },
-    });
-
-    tl.to(".mainHeading", { y: -100, opacity: 1, duration: 0.5 })
-      .to(".mainHeading", { y: -100, opacity: 0, duration: 0.5 })
-      .to(".scrollImageContainer img", { borderRadius: "70px" })
-      .to(".scrollImageContainer img", {
-        scaleY: isSmScreen ? 0.3 : 0.35,
-        scaleX: isLgScreen ? (isSmScreen ? 0.7 : 0.55) : 0.35,
-        borderRadius: "30px",
-        duration: 1,
-        y: -50,
-      })
-      .to(".glassmorphism", {
-        scaleX: isLgScreen ? 1.8 : 1.3,
-        scaleY: 1.5,
-        borderRadius: "30px",
-        duration: 1,
-        opacity: 1,
-      })
-      .to(".boxDetailsTitle", {
-        opacity: 1,
-        visibility: "visible",
-        y: 100,
-        duration: 1,
-      })
-      .to(".boxDetails", {
-        opacity: 1,
-        visibility: "visible",
-        y: 100,
-        duration: 1,
-      })
-      .to(container, {
-        x: () => -(container.scrollWidth - window.innerWidth),
-        duration: 7,
-        ease: "none",
-      })
-      .to(".glassmorphism", { opacity: 0 });
-
-    return () => {
-      tl.kill();
-      ScrollTrigger.getAll().forEach((instance) => instance.kill());
-    };
-  }, [isLgScreen, isSmScreen]);
   return (
+    <Box sx={{ px: 3, py: 5, backgroundColor: "#f4f6f8" }}>
+      <Typography
+        variant="h4"
+        align="center"
+        gutterBottom
+        sx={{ fontWeight: 700 ,py:{
+          xs:2,
+          md:4
+        }}}
+      >
+        Our Impactful Services & Diverse Reach
+      </Typography>
+
+      <Container>
+        <Grid container spacing={4} justifyContent="center">
+          {industries.map((item, index) => (
+            <Grid item xs={12} sm={6} md={4} key={index}>
+              <CardWithTilt item={item} isSmScreen={isSmScreen} />
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
+  );
+}
+
+// ✅ Custom Card with local state for hover
+function CardWithTilt({ item, isSmScreen }) {
+  const [transform, setTransform] = useState({ rotateY: 0, rotateX: 0 });
+
+  const handleMouseMove = (e) => {
+    const { offsetWidth: width, offsetHeight: height } = e.currentTarget;
+    const { offsetX: x, offsetY: y } = e.nativeEvent;
+    const rotateY = (x / width - 0.5) * 30;
+    const rotateX = (y / height - 0.5) * -30;
+    setTransform({ rotateY, rotateX });
+  };
+
+  const handleMouseLeave = () => {
+    setTransform({ rotateY: 0, rotateX: 0 });
+  };
+
+  return (
+    <Card
+      sx={{ perspective: "1000px" }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
       <Box
         sx={{
-          overflowX: "hidden",
           position: "relative",
+          transition: "transform 0.1s ease-out",
+          transform: `rotateY(${transform.rotateY}deg) rotateX(${transform.rotateX}deg)`,
         }}
       >
-        <Box
-          className="glassmorphism"
-          sx={{
-            position: "fixed",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%) scale(1)",
-            width: isSmScreen ? "90%" : "50%",
-            height: isSmScreen ? "90%" : "50%",
-            background: theme.palette.primary.main,
-            boxShadow: " 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-            backdropFilter: "blur( 6px )",
-            border: "1px solid rgba( 255, 255, 255, 0.18 )",
-            zIndex: -1,
-            pointerEvents: "none",
-            opacity: 0,
-          }}
+        <CardMedia
+          component="img"
+          height="200"
+          image={item.img}
+          alt={item.title}
         />
-        <Box
-          id="page2"
-          ref={page2Ref}
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "500%",
-            height: "100vh",
-            overflow: "hidden", 
-            position: "relative",
-          }}
-        >
-          {industries.map((item, index) => (
-            <Box
-              key={index}
-              className="box"
-              sx={{ width: "100%", position: "relative", height: "100%" }}
-            >
-              {index === 0 && (
-                <Box
-                  className="mainHeading"
-                  sx={{
-                    position: "absolute",
-                    top: "57%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                    color: "white",
-                    fontWeight: "600",
-                    fontSize: { xs: "25px", sm: "40px", md: "60px" },
-                    textAlign: "center",
-                    opacity: 0,
-                    zIndex: 2,
-                    fontFamily:theme.typography.fontFamily
-                  }}
-                >
-                  Our Impactful <br /> Services & Diverse Reach
-                </Box>
-              )}
-
-              <Box
-                className="scrollImageContainer"
-                sx={{ height: "100%", position: "relative" }}
-              >
-                <img
-                  src={item.img}
-                  alt="error"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-                {/*<Box sx={{position: "absolute",height: "100%",width: "100%",background: "black"}} />*/}
-                <Box
-                  className="boxDetailsTitle"
-                  sx={{
-                    position: "absolute",
-                    px: { xs: "25px", md: "40px", lg: "100px" },
-                    top: "52%",
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    color:theme.palette.secondary.main,
-                    textAlign: "center",
-                    zIndex: 4,
-                    width: isLgScreen ? (isSmScreen ? "90%" : "60%") : "45%",
-                    fontSize: { xs: "18px", sm: "26px", md: "32px" },
-                    fontWeight: "600",
-                    opacity: "0",
-                    fontFamily:theme.typography.fontFamily
-                  }}
-                >
-                  {item.title}
-                </Box>
-                <Box
-                  className="boxDetails"
-                  sx={{
-                    position: "absolute",
-                    px: { xs: "25px", md: "40px", lg: "100px" },
-                    top: isSmScreen ? "55%" : "58%",
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    color: "black",
-                    textAlign: "center",
-                    zIndex: 4,
-                    width: isLgScreen ? (isSmScreen ? "90%" : "60%") : "45%",
-                    fontSize: "16px",
-                    opacity: "0",
-                    overflow: "hidden",
-                    display: "-webkit-box",
-                    WebkitBoxOrient: "vertical",
-                    WebkitLineClamp: 6,
-                    lineHeight: "1.5em",
-                    fontFamily:theme.typography.fontFamily
-                  }}
-                >
-                  {item.desc}
-                </Box>
-              </Box>
-            </Box>
-          ))}
-        </Box>
+        <CardContent>
+          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+            {item.title}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{
+              display: "-webkit-box",
+              WebkitBoxOrient: "vertical",
+              WebkitLineClamp: isSmScreen ? 4 : 6,
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+            }}
+          >
+            {item.desc}
+          </Typography>
+        </CardContent>
       </Box>
+    </Card>
   );
 }
 
