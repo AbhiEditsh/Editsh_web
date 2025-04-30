@@ -33,7 +33,7 @@ function Horizontal() {
     {
       img: img3,
       title: "Healthtech & Life Science",
-      desc: "Innovate healthcare with our Healthtech & Life Sciences solutions, utilizing advanced technology. From telemedicine to data-driven insights, partner with us for precise and efficient advancements in medical care.",
+      desc: "Innovate healthcare with our Health tech & Life Sciences solutions, utilizing advanced technology. From telemedicine to data-driven insights, partner with us for precise and efficient advancements in medical care.",
     },
     {
       img: img4,
